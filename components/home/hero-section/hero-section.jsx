@@ -3,11 +3,11 @@ import CursorFollow from './follow-cursor';
 import HeroHeadline from './hero-headline';
 const HeroSection = () => {
   return (
-    <div className='mx-auto h-screen w-full relative'>
+    <div className='relative w-full h-screen mx-auto'>
       <div className='container mx-auto w-full h-5/6 md:h-[87.5%]'>
-        <div className='flex flex-col h-full w-full'>
+        <div className='flex flex-col w-full h-full'>
           <HeroHeadline />
-          <div className='overflow-hidden! relative m-auto flex-grow flex items-end justify-end w-full'>
+          <div className='relative flex items-end justify-end flex-grow w-full h-full m-auto overflow-hidden!'>
             <WhatsappPopUp />
             <CursorFollow />
           </div>
