@@ -19,7 +19,7 @@ const process_steps = [
 const ProcessSteps = () => {
   const containerRef = useRef(null);
   return (
-    <section className='container mx-auto p-2 py-14' ref={containerRef}>
+    <section className='container p-2 mx-auto py-14' ref={containerRef}>
       <HeadingAnimation>
         <div className='pb-16'>
           <h1
@@ -35,32 +35,32 @@ const ProcessSteps = () => {
         </div>
       </HeadingAnimation>
       <div
-        className='grid grid-cols-1 md:grid-cols-12 gap-3'>
-        <motion.div
-          initial={{ y: 100, x: 100 }}
-          whileInView={{ y: 0, x: 0 }}
-          transition={{ duration: 0.3, delay: 0.2 }}
-          viewport={{ once: true }}
-          className=' overflow-hidden! col-span-1 md:col-span-5 flex items-center gap-4 sm:gap-7 md:gap-10 relative pl-5'>
-          <div className='bg-gray-200 h-full w-5 rounded-3xl'>
-            <ScrollLinked />
-          </div>
-          <div>
-            {process_steps.map((item) => (
-              <div
-                key={uuidv7()}
-                className={`pt-13 sm:pt-20 md:pt-40 first:pt-0`}
-              >
-                <h1 className='font-bold text-2xl sm:text-3xl md:text-5xl text-[var(--accent)]'>{item.title}</h1>
-                <p className='pt-4 sm:pt-7 md:pt-10 font-semibold'>
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-        <div className='col-span-1 md:col-span-3 hidden md:block'></div>
-        <div className='col-span-1 md:col-span-4 hidden md:block'>
+        className='grid grid-cols-1 gap-3 md:grid-cols-12'>
+        <div className='overflow-hidden! col-span-1 md:col-span-5 flex items-center gap-4 sm:gap-7 md:gap-10 relative pl-5'>
+          <motion.div initial={{ y: 100, x: 50 }}
+            whileInView={{ y: 0, x: 0 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+            viewport={{ once: true }}>
+            <div className='w-5 h-full bg-gray-200 rounded-3xl'>
+              <ScrollLinked />
+            </div>
+            <div>
+              {process_steps.map((item) => (
+                <div
+                  key={uuidv7()}
+                  className={`pt-13 sm:pt-20 md:pt-40 first:pt-0`}
+                >
+                  <h1 className='font-bold text-2xl sm:text-3xl md:text-5xl text-[var(--accent)]'>{item.title}</h1>
+                  <p className='pt-4 font-semibold sm:pt-7 md:pt-10'>
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+        <div className='hidden col-span-1 md:col-span-3 md:block'></div>
+        <div className='hidden col-span-1 md:col-span-4 md:block'>
           <TimelineScrollImages />
         </div>
       </div>

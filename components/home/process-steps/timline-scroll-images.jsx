@@ -31,7 +31,7 @@ export default function TimelineScrollImages() {
 
   return (
     <motion.div
-      initial={{ y: 100, x: -100 }}
+      initial={{ y: 100, x: -50 }}
       whileInView={{ y: 0, x: 0 }}
       transition={{ duration: 0.3, delay: 0.2 }}
       viewport={{ once: true }}
@@ -45,10 +45,10 @@ export default function TimelineScrollImages() {
         {images.map((item, i) => (
           <div
             key={uuidv7()}
-            className="w-full h-full absolute top-0 left-0"
+            className="absolute top-0 left-0 w-full h-full"
             style={{ transform: `translateY(${i * 100}%)` }}
           >
-            <div className="image-title mb-4 relative z-10">
+            <div className="relative z-10 mb-4 image-title">
               {/* <h2 className="text-2xl font-bold text-[#212a3b]">{item.title}</h2> */}
             </div>
             <Image
@@ -56,7 +56,7 @@ export default function TimelineScrollImages() {
               height={641}
               src={item.img}
               alt={item.title}
-              className="absolute top-0 left-0 w-full h-full object-cover"
+              className="absolute top-0 left-0 object-cover w-full h-full"
             />
           </div>
         ))}

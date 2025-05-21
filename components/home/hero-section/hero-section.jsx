@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className='container mx-auto w-full h-5/6 md:h-[87.5%]'>
         <div className='flex flex-col w-full h-full'>
           <HeroHeadline />
-          <div className='relative flex items-end justify-end flex-grow w-full h-full m-auto overflow-hidden!'>
+          <div className='relative flex items-end justify-end flex-grow w-auto h-auto md:w-full md:h-full m-auto overflow-hidden!'>
             <WhatsappPopUp />
             <CursorFollow />
           </div>
