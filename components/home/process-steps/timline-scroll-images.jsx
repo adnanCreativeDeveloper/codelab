@@ -5,12 +5,12 @@ import { uuidv7 } from "uuidv7";
 import Image from "next/image";
 
 const images = [
-  { title: "Idea", img: "/process-steps/img-1.jpg" },
-  { title: "Design", img: "/process-steps/img-2.jpg" },
-  { title: "Develop", img: "/process-steps/img-3.jpg" },
-  { title: "Test", img: "/process-steps/img-4.webp" },
-  { title: "Launch", img: "/process-steps/img-5.jpg" },
-  { title: "Support", img: "/process-steps/img-6.webp" },
+  { title: "Idea", img: "/images/process-steps/img-1.jpg" },
+  { title: "Design", img: "/images/process-steps/img-2.jpg" },
+  { title: "Develop", img: "/images/process-steps/img-3.jpg" },
+  { title: "Test", img: "/images/process-steps/img-4.webp" },
+  { title: "Launch", img: "/images/process-steps/img-5.jpg" },
+  { title: "Support", img: "/images/process-steps/img-6.webp" },
 ];
 
 export default function TimelineScrollImages() {

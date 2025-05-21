@@ -49,14 +49,14 @@ const Header = () => {
         <nav>
           <div className={`flex justify-between items-center py-4 px-2`}><Link href='/' className='grid place-items-center relative w-[177.125px] h-[48px]'>
             <Image
-              src="/logo/logo-white.png"
+              src="/images/logo/logo-white.png"
               alt="Logo White"
               width={177.125}
               height={48}
               className={`object-contain transition-opacity duration-300 ease-in-out ${navbarBackground || pathName === '/services' ? 'opacity-0' : 'opacity-100'}`}
             />
             <Image
-              src="/logo/logo-black.png"
+              src="/images/logo/logo-black.png"
               alt="Logo Black"
               width={177.125}
               height={48}
@@ -66,8 +66,8 @@ const Header = () => {
             <div>
               <DesktopNavbar />
             </div>
-            <div onClick={handleToggleNavItems} className='cursor-pointer block md:hidden'>
-              <FontAwesomeIcon icon={faBars} className='text-current text-2xl' size='2x' />
+            <div onClick={handleToggleNavItems} className='block cursor-pointer md:hidden'>
+              <FontAwesomeIcon icon={faBars} className='text-2xl text-current' size='2x' />
             </div>
             <MobileNavbar handleToggleNavItems={handleToggleNavItems} toggleNavItmes={toggleNavItmes} />
             <button className='bg-[#c90606] hover:bg-[var(--accent-hover)] text-white transition-all duration-100 ease-in-out lg:text-base text-sm px-3 lg:px-6 py-1 lg:py-2 rounded-lg font-semibold hidden md:block'>

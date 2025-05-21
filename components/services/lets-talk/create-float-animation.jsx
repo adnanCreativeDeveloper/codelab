@@ -5,18 +5,18 @@ import Image from 'next/image';
 const CreateFloatAnimation = () => {
 
   const createFloatAnimation = (delay = 0, yRange = 10, rotateRange = 5) => ({
-  animate: {
-    y: [0, -yRange, 0, yRange, 0],
-    rotate: [0, rotateRange, -rotateRange, 0],
-    scale: [1, 1.05, 1],
-    transition: {
-      duration: 4 + Math.random() * 3,
-      delay,
-      repeat: Infinity,
-      ease: 'easeInOut',
+    animate: {
+      y: [0, -yRange, 0, yRange, 0],
+      rotate: [0, rotateRange, -rotateRange, 0],
+      scale: [1, 1.05, 1],
+      transition: {
+        duration: 4 + Math.random() * 3,
+        delay,
+        repeat: Infinity,
+        ease: 'easeInOut',
+      },
     },
-  },
-});
+  });
 
   const floatingImages = [
     { src: '/images/services/figma.png', alt: 'figma', top: '10', left: '10', delay: 0, yRange: 10, rotateRange: 5 },

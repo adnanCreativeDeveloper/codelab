@@ -8,7 +8,7 @@ const process_steps = [
     title: "Project Planning & Requirements",
     description:
       "Effective project planning ensures clear objectives, resource allocation, and structured execution, while requirement analysis identifies key functionalities and expectations.",
-    img: "/development-process/point-1.png",
+    img: "/images/development-process/point-1.png",
     styles: {
       top: 'top-[5.5rem]',
       cardBg: "bg-[#090914]",
@@ -22,7 +22,7 @@ const process_steps = [
     title: "Sprint Execution Process",
     description:
       "Sprint execution involves breaking work into manageable tasks, prioritizing them, and ensuring efficient completion within the sprint cycle timeframe.",
-    img: "/development-process/point-2.png",
+    img: "/images/development-process/point-2.png",
     styles: {
       top: 'top-[9.5rem]',
       cardBg: "bg-[#fffefd]",
@@ -36,7 +36,7 @@ const process_steps = [
     title: "Daily Team Stand‑ups",
     description:
       "Short, focused daily meetings help teams align on progress, discuss blockers, update priorities, and ensure smooth collaboration throughout the sprint.",
-    img: "/development-process/point-3.png",
+    img: "/images/development-process/point-3.png",
     styles: {
       top: 'top-[12.5rem]',
       cardBg: "bg-[#f5f2f2]",
@@ -50,7 +50,7 @@ const process_steps = [
     title: "Review & Continuous Feedback",
     description:
       "Regular review meetings and feedback loops foster continuous improvement, ensuring project deliverables align with expectations and necessary refinements are made.",
-    img: "/development-process/point-4.png",
+    img: "/images/development-process/point-4.png",
     styles: {
       top: 'top-[15.5rem]',
       cardBg: "bg-[#ebe7e0]",
@@ -80,7 +80,7 @@ const ProcessSteps = () => {
                 grid place-items-center
               `}
             >
-              <p className="text-xs sm:text-sm md:text-lg font-semibold">
+              <p className="text-xs font-semibold sm:text-sm md:text-lg">
                 STEP {index + 1}
               </p>
             </div>
@@ -106,7 +106,7 @@ const ProcessSteps = () => {
                 width={262.375}
                 height={300}
                 alt={item.title}
-                className="mx-auto h-52 w-auto md:h-auto md:w-auto"
+                className="w-auto mx-auto h-52 md:h-auto md:w-auto"
               />
             </div>
           </div>

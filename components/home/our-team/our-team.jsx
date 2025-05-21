@@ -13,31 +13,31 @@ const team = [
     name: 'Ariba Dastgir',
     role: 'App Developer',
     location: 'Bahawalpur',
-    img: '/our-team/areeba.png',
+    img: '/images/our-team/areeba.png',
   },
   {
     name: 'Fiza Yaseen',
     role: 'Hr.For Codelab',
     location: 'Bahawalpur',
-    img: '/our-team/Fizza.png',
+    img: '/images/our-team/Fizza.png',
   },
   {
     name: 'Shumaila Sial',
     role: 'Graphic Designer T/C',
     location: 'Massachusetts',
-    img: '/our-team/Shumaila.png',
+    img: '/images/our-team/Shumaila.png',
   },
   {
     name: 'Malik Ansar',
     role: 'WordPress Developer',
     location: 'Liaquatpur',
-    img: '/our-team/Frame-1618873284-1.png',
+    img: '/images/our-team/Frame-1618873284-1.png',
   },
   {
     name: 'Ahtasham Athar',
     role: 'Front-End Developer',
     location: 'Bahawalpur',
-    img: '/our-team/ahtsham.png',
+    img: '/images/our-team/ahtsham.png',
   },
 ];
 
@@ -71,7 +71,7 @@ const OurTeam = () => {
           <div className="marquee-content">
             {[...team, ...team].map((item) => (
               <TeamMotion key={uuidv7()}>
-                <div className="m-2 p-2 flex items-start gap-4 shadow-lg rounded-2xl min-w-72 hover:scale-110 duration-150 bg-white">
+                <div className="flex items-start gap-4 p-2 m-2 duration-150 bg-white shadow-lg rounded-2xl min-w-72 hover:scale-110">
                   <Image
                     height={70}
                     width={70}
@@ -79,8 +79,8 @@ const OurTeam = () => {
                     src={item.img}
                     alt={item.name}
                   />
-                  <div className="card-info mt-2">
-                    <h4 className="text-lg sm:text-xl font-semibold">{item.name}</h4>
+                  <div className="mt-2 card-info">
+                    <h4 className="text-lg font-semibold sm:text-xl">{item.name}</h4>
                     <h5>{item.role}</h5>
                     <p>{item.location}</p>
                   </div>

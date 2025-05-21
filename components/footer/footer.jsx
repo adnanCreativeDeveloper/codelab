@@ -14,7 +14,7 @@ const Footer = () => {
         <div>
           <div className='relative mb-5'>
             <Image
-              src="/logo/logo-black.png"
+              src="/images/logo/logo-black.png"
               alt="Logo Black"
               width={200}
               height={70}

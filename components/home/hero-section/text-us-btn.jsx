@@ -36,20 +36,20 @@ const TextUsBtn = () => {
           display: isModal ? 'block' : 'none'
         }}
         transition={{ type: "spring", damping: 20, stiffness: 100 }}
-        className={`fixed inset-0 z-50 h-full w-full bg-black/20 ${isModal ? 'backdrop-blur-sm' : ''}`}>
+        className={`fixed inset-0 z-50 h-full w-full bg-black/20 p-2 ${isModal ? 'backdrop-blur-sm' : ''}`}>
         <motion.div
           initial={{ scale: 0.4, opacity: 0 }}
           animate={{ scale: isModal ? 1 : 0.4, opacity: isModal ? 1 : 0 }}
           transition={{ type: "spring", damping: 15, stiffness: 100 }}
-          className="py-3 px-2 md:py-7 md:px-5 rounded-lg shadow-3xl bg-white w-96 relative left-1/2 top-1/2 -translate-1/2">
+          className="relative w-full px-2 py-3 bg-white rounded-lg md:py-7 md:px-5 shadow-3xl md:w-96 md:left-1/2 top-1/2 md:-translate-1/2">
           <button onClick={handleIsModal} className="cursor-pointer absolute right-4 top-4 h-9 w-9 rounded-full grid place-items-center bg-[#c90606] hover:bg-[var(--accent-hover)] text-white">
             <FontAwesomeIcon icon={faTimes} className="size-6" />
           </button>
-          <h1 className="text-center mb-5 text-lg md:text-xl font-semibold">Chat with <span className="text-[var(--accent)]">Codelab</span></h1>
-          <div className="mb-5 w-full">
+          <h1 className="mb-5 text-lg font-semibold text-center md:text-xl">Chat with <span className="text-[var(--accent)]">Codelab</span></h1>
+          <div className="w-full mb-5">
             <input type="number" id="your-phone-number" placeholder="Enter your number" className="w-full py-2.5 px-2 rounded-lg border border-gray-200" />
           </div>
-          <p className="mb-5 text-center text-sm pb-1 text-gray-500">Live representative responds immediately</p>
+          <p className="pb-1 mb-5 text-sm text-center text-gray-500">Live representative responds immediately</p>
           <button className='text-center mx-auto bg-[#c90606] hover:bg-[var(--accent-hover)] text-white transition-all duration-90 ease-in-out lg:text-base text-sm px-3 lg:px-10 py-2 lg:py-3 rounded-lg font-semibold hidden md:block'>
             Let's Chat
           </button>
