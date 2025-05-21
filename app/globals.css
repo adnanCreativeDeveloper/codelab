@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("/fonts/bootstrap-icons/bootstrap-icons.woff2") format("woff2"),
+    url("/fonts/bootstrap-icons/bootstrap-icons.woff") format("woff");
+}
+
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --accent: #af1919;
+  --accent-hover: #2a2d34;
+  --primary: #fff;
+  --secondry-hover: #fff;
+  --surface: #2a2d34;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+.progress-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #e0e0e0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.progress-bar {
+  width: 100%;
+  background-color: #ff0088;
+  transition: height 0.8s ease-out;
+}
+
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.marquee-content {
+  display: inline-flex;
+  gap: 1rem;
+  animation: scroll-left 50s linear infinite;
+}
+
+.marquee-right .marquee-content {
+  animation-name: scroll-right;
+}
+
+.marquee-left .marquee-content {
+  animation-name: scroll-left;
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+.bg-right {
+  background-image: url('/testimonial-imgs/user-thumbs.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
