@@ -1,5 +1,4 @@
 import Animation from "@/components/common/animation";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { uuidv7 } from "uuidv7";
 
@@ -69,7 +68,7 @@ const HelpProcessCard = () => {
                 width={250}
                 src={item.icon}
                 alt="CRM Icon"
-                className="w-full h-full object-cover"
+                className="object-cover w-full h-full"
               />}
               {item.icon && item.title && <Image
                 height={48}
