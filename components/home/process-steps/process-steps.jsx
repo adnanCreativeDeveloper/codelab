@@ -36,11 +36,13 @@ const ProcessSteps = () => {
       </HeadingAnimation>
       <div
         className='grid grid-cols-1 gap-3 md:grid-cols-12'>
-        <div className='overflow-hidden! col-span-1 md:col-span-5 flex items-center gap-4 sm:gap-7 md:gap-10 relative pl-5'>
+
+        <div className='col-span-1 md:col-span-5 flex items-center gap-4 sm:gap-7 md:gap-10 relative pl-5'>
           <motion.div initial={{ y: 100, x: 50 }}
             whileInView={{ y: 0, x: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}
-            viewport={{ once: true }}>
+            viewport={{ once: true }}
+            className="flex gap-4 sm:gap-7 md:gap-10 h-full">
             <div className='w-5 h-full bg-gray-200 rounded-3xl'>
               <ScrollLinked />
             </div>
@@ -59,7 +61,7 @@ const ProcessSteps = () => {
             </div>
           </motion.div>
         </div>
-        <div className='hidden col-span-1 md:col-span-3 md:block'></div>
+        <div className='hidden col-span-1 md:col-span-2 md:block'></div>
         <div className='hidden col-span-1 md:col-span-4 md:block'>
           <TimelineScrollImages />
         </div>

@@ -21,20 +21,20 @@ const HeroSection = () => {
           playsInline
           className='object-cover w-full h-full 
           sm:max-w-[calc(40rem+75px)] 
-          md:max-w-[calc(48rem+75px)] 
-          lg:max-w-[calc(64rem+75px)] 
+          md:max-w-[calc(48rem+40px)] 
+          lg:max-w-[calc(64rem+40px)] 
           xl:max-w-[calc(80rem+75px)] 
-          2xl:max-w-[calc(96rem+75px)] 
+          2xl:max-w-[calc(96rem+40px)] 
           mx-auto'
         >
           <source src="/video/CodelabHeroSection.mp4" type="video/mp4" />
         </video>
         <div className='absolute inset-0 bg-black/50
         sm:max-w-[calc(40rem+75px)] 
-          md:max-w-[calc(48rem+75px)] 
-          lg:max-w-[calc(64rem+75px)] 
+          md:max-w-[calc(48rem+40px)] 
+          lg:max-w-[calc(64rem+40px)] 
           xl:max-w-[calc(80rem+75px)] 
-          2xl:max-w-[calc(96rem+75px)]
+          2xl:max-w-[calc(96rem+40px)]
           mx-auto'></div>
       </div>
     </div>

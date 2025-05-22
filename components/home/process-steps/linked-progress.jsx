@@ -1,17 +1,28 @@
 "use client"
 import { motion, useScroll, useMotionValueEvent, useTransform } from "framer-motion"
+import { useEffect, useState } from "react";
 
 export default function ScrollLinked() {
   const { scrollY } = useScroll()
-  // const { scrollY } = useScroll()
+  const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
 
-  // useMotionValueEvent(scrollY  Progress, "change", (value) => {console.log(value);})
+  useEffect(() => {
+    setWidth(window.innerWidth);
 
-  // 744
-  // 2332
+    const handleWidth = () => {
+      setWidth(window.innerWidth);
+    }
 
-  // Scale in Y direction from 0 to 1 between scrollY 523 and 1396
-  const scaleY = useTransform(scrollY, [744, 2332], [0, 1])
+    window.addEventListener("resize", handleWidth);
+    return () => {
+      window.removeEventListener("resize", handleWidth);
+    };
+  }, []);
+
+  const isMobile = width < 768;
+  const startScroll = isMobile ? 689 : 744;
+  const endScroll = isMobile ? 1590 : 2332;
+  const scaleY = useTransform(scrollY, [startScroll, endScroll], [0, 1])
 
   return (
     <motion.div

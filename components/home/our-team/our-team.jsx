@@ -13,31 +13,31 @@ const team = [
     name: 'Ariba Dastgir',
     role: 'App Developer',
     location: 'Bahawalpur',
-    img: '/images/our-team/areeba.png',
+    img: '/images/home/our-team/areeba.png',
   },
   {
     name: 'Fiza Yaseen',
     role: 'Hr.For Codelab',
     location: 'Bahawalpur',
-    img: '/images/our-team/Fizza.png',
+    img: '/images/home/our-team/Fizza.png',
   },
   {
     name: 'Shumaila Sial',
     role: 'Graphic Designer T/C',
     location: 'Massachusetts',
-    img: '/images/our-team/Shumaila.png',
+    img: '/images/home/our-team/Shumaila.png',
   },
   {
     name: 'Malik Ansar',
     role: 'WordPress Developer',
     location: 'Liaquatpur',
-    img: '/images/our-team/Frame-1618873284-1.png',
+    img: '/images/home/our-team/Frame-1618873284-1.png',
   },
   {
     name: 'Ahtasham Athar',
     role: 'Front-End Developer',
     location: 'Bahawalpur',
-    img: '/images/our-team/ahtsham.png',
+    img: '/images/home/our-team/ahtsham.png',
   },
 ];
 

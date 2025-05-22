@@ -22,10 +22,10 @@ const TextUsBtn = () => {
         className='fixed z-40 top-1/2 transform -translate-y-1/2 bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-white px-8 py-2 rounded-tl-2xl rounded-tr-2xl rotate-90 cursor-pointer
           -left-10
           sm:left-[calc((100%-40rem)/2-75px)]
-          md:left-[calc((100%-48rem)/2-75px)]
-          lg:left-[calc((100%-64rem)/2-75px)]
+          md:left-[calc((100%-48rem)/2-40px)]
+          lg:left-[calc((100%-64rem)/2-40px)]
           xl:left-[calc((100%-80rem)/2-75px)]
-          2xl:left-[calc((100%-96rem)/2-75px)]'
+          2xl:left-[calc((100%-96rem)/2-40px)]'
       >
         Text Us
       </motion.button>

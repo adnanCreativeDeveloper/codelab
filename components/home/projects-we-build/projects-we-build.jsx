@@ -5,12 +5,12 @@ import HeadingAnimation from "@/components/common/heading-animation";
 import Animation from "@/components/common/animation";
 
 const projects = [
-  { title: 'MC SALON', date: '29/04/2025', img: '/images/project/project-1.jpg' },
-  { title: 'MC SALON', date: '29/04/2025', img: '/images/project/project-2.jpg' },
-  { title: 'MC SALON', date: '29/04/2025', img: '/images/project/project-3.jpg' },
-  { title: 'MC SALON', date: '29/04/2025', img: '/images/project/project-4.jpg' },
-  { title: 'MC SALON', date: '29/04/2025', img: '/images/project/project-5.jpg' },
-  { title: 'MC SALON', date: '29/04/2025', img: '/images/project/project-6.jpg' },
+  { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-1.jpg' },
+  { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-2.jpg' },
+  { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-3.jpg' },
+  { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-4.jpg' },
+  { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-5.jpg' },
+  { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-6.jpg' },
 ]
 
 const ProjectsWeBuild = () => {
