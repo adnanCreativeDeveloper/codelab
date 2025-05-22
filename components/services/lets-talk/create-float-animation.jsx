@@ -19,14 +19,14 @@ const CreateFloatAnimation = () => {
   });
 
   const floatingImages = [
-    { src: '/images/services/figma.png', alt: 'figma', top: '10', left: '10', delay: 0, yRange: 10, rotateRange: 5 },
-    { src: '/images/services/html.png', alt: 'html', top: '32', left: '85', delay: 1, yRange: 10, rotateRange: 5 },
-    { src: '/images/services/photoshop.png', alt: 'photoshop', top: '75', left: '82', delay: 2, yRange: 10, rotateRange: 5 },
-    { src: '/images/services/php.png', alt: 'php', top: '20', left: '20', delay: 0.5, yRange: 15, rotateRange: 3 },
-    { src: '/images/services/unknown-1.png', alt: 'unknown1', top: '60', left: '15', delay: 1.2, yRange: 8, rotateRange: 6 },
-    { src: '/images/services/unknown-2.png', alt: 'unknown2', top: '70', left: '50', delay: 0.3, yRange: 12, rotateRange: 7 },
-    { src: '/images/services/unknown-3.png', alt: 'unknown3', top: '30', left: '65', delay: 1.5, yRange: 9, rotateRange: 4 },
-    { src: '/images/services/wordpress.png', alt: 'wordpress', top: '10', left: '35', delay: 2.5, yRange: 13, rotateRange: 5 },
+    { src: '/images/services/services-hero-section/figma.png', alt: 'figma', top: '10', left: '10', delay: 0, yRange: 10, rotateRange: 5 },
+    { src: '/images/services/services-hero-section/html.png', alt: 'html', top: '32', left: '85', delay: 1, yRange: 10, rotateRange: 5 },
+    { src: '/images/services/services-hero-section/photoshop.png', alt: 'photoshop', top: '75', left: '82', delay: 2, yRange: 10, rotateRange: 5 },
+    { src: '/images/services/services-hero-section/php.png', alt: 'php', top: '20', left: '20', delay: 0.5, yRange: 15, rotateRange: 3 },
+    { src: '/images/services/services-hero-section/unknown-1.png', alt: 'unknown1', top: '60', left: '15', delay: 1.2, yRange: 8, rotateRange: 6 },
+    { src: '/images/services/services-hero-section/unknown-2.png', alt: 'unknown2', top: '70', left: '50', delay: 0.3, yRange: 12, rotateRange: 7 },
+    { src: '/images/services/services-hero-section/unknown-3.png', alt: 'unknown3', top: '30', left: '65', delay: 1.5, yRange: 9, rotateRange: 4 },
+    { src: '/images/services/services-hero-section/wordpress.png', alt: 'wordpress', top: '10', left: '35', delay: 2.5, yRange: 13, rotateRange: 5 },
   ];
 
   return (
