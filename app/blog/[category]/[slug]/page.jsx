@@ -1,3 +1,4 @@
+'use client'
 // app/blog/[category]/[slug]/page.tsx
 import { useParams } from 'next/navigation';
 
