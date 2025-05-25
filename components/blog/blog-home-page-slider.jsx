@@ -150,7 +150,7 @@ const BlogHomePageSlider = () => {
       </div>
       <div className='z-20 absolute inset-0 flex items-center pt-8 bg-black/50'>
         <div className='w-full md:pl-32 p-2 md:w-3/4'>
-          <div className='w-full p-7 md:p-10 overflow-hidden bg-white/10 min-h-50 md:min-h-56 backdrop-blur-xl rounded-2xl'>
+          <div className='w-full max-sm:pl-8 p-7 md:p-10 overflow-hidden bg-white/10 min-h-50 md:min-h-56 backdrop-blur-xl rounded-2xl'>
             <AnimatePresence mode="wait">
               <motion.div key={currentIndex}
                 initial={{ y: 50, opacity: 0 }}

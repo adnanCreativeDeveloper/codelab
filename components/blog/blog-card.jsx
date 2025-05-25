@@ -39,7 +39,7 @@ const blog_arr = [
   {
     title: 'Best b2b Digital Marketing Agency for Scaling Your Businesses',
     description: 'Find the best B2B digital marketing agencies in 2025 focused on helping businesses scale. This guide compares top agencies and their strategies for driving demand, improving conversions, and building brand awareness through SEO, content marketing, and paid advertising.',
-    img: '/images/blog/blogs/b2c-marketing.jpg',
+    img: '/images/blog/blogs/b2b-marketing.jpg',
     url: 'https://codelab.pk/best-b2b-digital-marketing-agency-for-scaling-your-businesses/',
     keyWords: 'Social Media Marketing',
   },

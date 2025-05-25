@@ -1,5 +1,6 @@
 import BlogHomePageSlider from './blog-home-page-slider';
 import BlogCardsSlider from './blog-cards-slider';
+import LatestPost from './latest-post';
 
 
 
@@ -23,6 +24,7 @@ const Blog = () => {
           <BlogHomePageSlider />
         </div>
       </div>
+      <LatestPost />
       <BlogCardsSlider />
     </div >
   );
