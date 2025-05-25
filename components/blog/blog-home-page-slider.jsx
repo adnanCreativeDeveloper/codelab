@@ -25,9 +25,9 @@ const img = [
     img: '/images/blog/blogs/android-development.jpg',
   },
   {
-    title: 'Best b2b Digital Marketing Agency for Scaling Your Businesses',
+    title: 'Best B2B Digital Marketing Agency for Scaling Your Businesses',
     description: 'Find the best B2B digital marketing agencies in 2025 focused on helping businesses scale. This guide compares top agencies and their strategies for driving demand, improving conversions, and building brand awareness through SEO, content marketing, and paid advertising.',
-    img: '/images/blog/blogs/b2b-marketing.jpg',
+    img: '/images/blog/blogs/b2c-marketing.jpg',
   },
   {
     title: 'HTML Viewer Meaning Usage and PDF Conversion',
@@ -122,11 +122,13 @@ const BlogHomePageSlider = () => {
                 fill
                 src={img[prevIndex].img}
                 alt={img[prevIndex].alt}
-                className="object-cover object-center"
+                className="object-cover object-center w-auto h-full"
                 priority
               />
             </motion.div>
           )}
+        </AnimatePresence>
+        <AnimatePresence mode="wait">
           <motion.div
             key={`current-${currentIndex}`}
             custom={direction}
@@ -140,7 +142,7 @@ const BlogHomePageSlider = () => {
               fill
               src={img[currentIndex].img}
               alt={img[currentIndex].title}
-              className="object-cover object-center"
+              className="object-cover object-center w-auto h-full"
               priority
             />
           </motion.div>
@@ -148,7 +150,7 @@ const BlogHomePageSlider = () => {
       </div>
       <div className='z-20 absolute inset-0 flex items-center pt-8 bg-black/50'>
         <div className='w-full md:pl-32 p-2 md:w-3/4'>
-          <div className='w-full p-3 md:p-10 overflow-hidden bg-white/10 backdrop-blur-xl rounded-2xl'>
+          <div className='w-full p-7 md:p-10 overflow-hidden bg-white/10 min-h-50 md:min-h-56 backdrop-blur-xl rounded-2xl'>
             <AnimatePresence mode="wait">
               <motion.div key={currentIndex}
                 initial={{ y: 50, opacity: 0 }}
@@ -165,7 +167,7 @@ const BlogHomePageSlider = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

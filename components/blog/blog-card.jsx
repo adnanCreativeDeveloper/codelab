@@ -39,7 +39,7 @@ const blog_arr = [
   {
     title: 'Best b2b Digital Marketing Agency for Scaling Your Businesses',
     description: 'Find the best B2B digital marketing agencies in 2025 focused on helping businesses scale. This guide compares top agencies and their strategies for driving demand, improving conversions, and building brand awareness through SEO, content marketing, and paid advertising.',
-    img: '/images/blog/blogs/b2b-marketing.jpg',
+    img: '/images/blog/blogs/b2c-marketing.jpg',
     url: 'https://codelab.pk/best-b2b-digital-marketing-agency-for-scaling-your-businesses/',
     keyWords: 'Social Media Marketing',
   },
@@ -129,18 +129,22 @@ const blog_arr = [
   },
 ];
 const BlogCard = () => {
-  const [slidesPerView, setSlidesPerView] = useState(4);
+  const [slidesPerView, setSlidesPerView] = useState(1);
   useEffect(() => {
     const handleResize = () => {
-      const width = window.innerWidth
-      if (width < 640) { setSlidesPerView(1) }
+      const width = window.innerWidth;
+      if (width < 640) { setSlidesPerView(1); }
       else if (width < 768) { setSlidesPerView(2); }
       else if (width < 1024) { setSlidesPerView(3); }
-      else { setSlidesPerView(4) }
+      else { setSlidesPerView(4); }
     };
 
+    handleResize();
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
   return (
     <>
