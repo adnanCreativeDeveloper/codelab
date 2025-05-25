@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { uuidv7 } from "uuidv7";
-import DraggableCarousel from "./draggable-carousel";
 import HeadingAnimation from "@/components/common/heading-animation";
 import Animation from "@/components/common/animation";
+import DraggableCarousel from "@/components/common/draggable-carousel";
 
 const projects = [
   { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-1.jpg' },
@@ -35,6 +35,7 @@ const ProjectsWeBuild = () => {
         </div>
       </HeadingAnimation>
 
+
       <Animation>
         <div className="overflow-x-hidden">
           <div
@@ -45,7 +46,7 @@ const ProjectsWeBuild = () => {
                 {projects.map((item) => (
                   <div
                     key={uuidv7()}
-                    className="flex-shrink-0 mx-auto w-[80%] sm:w-[40%] md:w-[25%] bg-gray-100 rounded-3xl p-4"
+                    className="flex-shrink-0 w-80 bg-gray-100 rounded-3xl p-4"
                   >
                     <div className="flex items-center justify-between mb-4 text-sm md:text-xs lg:text-base">
                       <div className="py-1 px-3 rounded-full bg-gray-200">
@@ -61,7 +62,7 @@ const ProjectsWeBuild = () => {
                         width={333}
                         height={320}
                         alt={item.title}
-                        className="object-contain w-full h-full rounded-3xl select-none pointer-events-none"
+                        className="object-conver w-full h-full rounded-3xl select-none pointer-events-none"
                         draggable={false}
                       />
                     </div>

@@ -10,7 +10,7 @@ const navItems = [
   { id: uuidv7(), label: 'Home', href: '/' },
   { id: uuidv7(), label: 'About us', href: '/about' },
   { id: uuidv7(), label: 'Services', href: '/services' },
-  { id: uuidv7(), label: 'Blog', href: '/blogs' },
+  { id: uuidv7(), label: 'Blog', href: '/blog' },
   { id: uuidv7(), label: 'Contact', href: '/contact' }
 ];
 
@@ -36,7 +36,7 @@ export const MobileNavbar = ({ handleToggleNavItems, toggleNavItmes }) => {
       <div>
         <ul className='flex items-center justify-between py-4 px-4 sm:px-12 text-red-500'>
           <li><Link href='/'>
-            <Image src={'/logo/logo-black.png'} alt='Logo' width={177.125} height={48} className='' />
+            <Image src={'/images/logo/logo-black.png'} alt='Logo' width={177.125} height={48} className='h-auto' />
           </Link></li>
           <li onClick={handleToggleNavItems} className='cursor-pointer'>
             <FontAwesomeIcon icon={faTimes} className='text-current text-2xl' size="2x" />
@@ -46,7 +46,7 @@ export const MobileNavbar = ({ handleToggleNavItems, toggleNavItmes }) => {
       <div>
         <ul className='text-white w-full md:w-auto bg-black p-4 md:p-0 transition-all duration-300 ease-in-out'>
           {navItems.map((item, index) => (
-            <li key={uuidv7()} className='max-md:text-center max-md:w-full'>
+            <li onClick={handleToggleNavItems} key={uuidv7()} className='max-md:text-center max-md:w-full'>
               <a href={item.href} className='font-semibold py-2.5 w-full inline-block'>
                 {item.label}
               </a>

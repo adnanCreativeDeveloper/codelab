@@ -44,7 +44,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`z-50 sticky top-0 ${navbarBackground || pathName === '/services' ? 'bg-[var(--secondry-hover)] text-[var(--surface)]' : 'bg-transparent text-[var(--primary)]'} ${navbarBackground && 'shadow-lg'} transition-all duration-500 ease-in-out'`}>
+    <header className={`z-50 sticky top-0 ${navbarBackground || pathName === '/services' || pathName === '/contact' ? 'bg-[var(--secondry-hover)] text-[var(--surface)]' : 'bg-transparent text-[var(--primary)]'} ${navbarBackground && 'shadow-lg'} transition-all duration-500 ease-in-out'`}>
       <div className="container mx-auto">
         <nav>
           <div className={`flex justify-between items-center py-4 px-2`}><Link href='/' className='grid place-items-center relative w-[177.125px] h-[48px]'>
@@ -53,14 +53,14 @@ const Header = () => {
               alt="Logo White"
               width={177.125}
               height={48}
-              className={`object-contain transition-opacity duration-300 ease-in-out ${navbarBackground || pathName === '/services' ? 'opacity-0' : 'opacity-100'}`}
+              className={`object-contain transition-opacity duration-300 ease-in-out ${navbarBackground || pathName === '/services' || pathName === '/contact' ? 'opacity-0' : 'opacity-100'}`}
             />
             <Image
               src="/images/logo/logo-black.png"
               alt="Logo Black"
               width={177.125}
               height={48}
-              className={`object-contain transition-opacity duration-300 ease-in-out absolute top-0 left-0 ${navbarBackground || pathName === '/services' ? 'opacity-100' : 'opacity-0'}`}
+              className={`object-contain transition-opacity duration-300 ease-in-out absolute top-0 left-0 ${navbarBackground || pathName === '/services' || pathName === '/contact' ? 'opacity-100' : 'opacity-0'}`}
             />
           </Link>
             <div>

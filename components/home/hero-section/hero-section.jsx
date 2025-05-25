@@ -3,7 +3,12 @@ import CursorFollow from './follow-cursor';
 import HeroHeadline from './hero-headline';
 const HeroSection = () => {
   return (
-    <div className='relative w-full h-screen mx-auto'>
+    <div className='relative w-full h-screen mx-auto
+    -z-20 sm:max-h-[calc(40rem)] 
+          md:max-h-[calc(48rem)] 
+          lg:max-h-[calc(64rem)] 
+          xl:max-h-[calc(80rem)] 
+          2xl:max-h-[calc(96rem)]'>
       <div className='container mx-auto w-full h-5/6 md:h-[87.5%]'>
         <div className='flex flex-col w-full h-full'>
           <HeroHeadline />

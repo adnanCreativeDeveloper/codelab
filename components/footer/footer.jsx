@@ -1,5 +1,5 @@
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInbox, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -62,12 +62,12 @@ const Footer = () => {
       </div>
       <div>
         <h3 className="mb-3 text-lg font-semibold">Contact Us</h3>
-        <div className='flex cursor-pointer gap-2 md:gap-4 text-[var(--accent)] hover:text-black duration-300'>
+        <div className='flex cursor-pointer gap-2 text-[var(--accent)] hover:text-black duration-300'>
           <FontAwesomeIcon icon={faPhone} className='size-6' />
           <p className="text-sm">+92 3456789012</p>
         </div>
-        <div className='my-2 cursor-pointer flex gap-2 md:gap-4 text-[var(--accent)] hover:text-black duration-300'>
-          <FontAwesomeIcon icon={faInbox} className='size-6' />
+        <div className='my-2 cursor-pointer flex gap-2 text-[var(--accent)] hover:text-black duration-300'>
+          <FontAwesomeIcon icon={faEnvelope} className='size-6' />
           <p className="text-sm">support@mail.com</p>
         </div>
       </div>
