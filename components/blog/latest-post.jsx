@@ -13,7 +13,7 @@ const LatestPost = () => {
       </HeadingAnimation>
       <div>
         <div className='grid items-start grid-cols-1 gap-6 md:p-4 bg-gray-200 rounded-lg md:grid-cols-12 md:rounded-3xl'>
-          <div classNamemd:p-4 md:p-0 col-span-1 md:col-span-4'>
+          <div className"p-4 md:p-0 col-span-1 md:col-span-4'>
             <div className="font-semibold bg-gray-900 ring-1 ring-gray-900 hover:bg-gray-700 duration-300 cursor-pointer hover:text-white text-sm text-gray-200 rounded-sm py-0.5 px-2 w-fit grid place-items-center">
               <p>Social Media Marketing</p>
             </div>
