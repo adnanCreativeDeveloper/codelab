@@ -20,6 +20,9 @@ import TextUsBtn from "@/components/home/hero-section/text-us-btn";
 export const metadata = {
   title: "Codelab Enhanced Features",
   description: "CodeLab.pk - Premier IT solutions institute offering comprehensive training in software development, web technologies, and digital skills. Join our hands-on learning environment to build your tech career.",
+  icons: {
+    icon: '/images/logo/codelab-logo-black.png'
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -30,7 +33,7 @@ export default function RootLayout({ children }) {
       // ${geistSans.variable} ${geistMono.variable} 
       >
         <Header />
-        <TextUsBtn />
+        {/* <TextUsBtn /> */}
         {children}
         <Footer />
       </body>

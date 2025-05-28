@@ -1,4 +1,10 @@
 @import "tailwindcss";
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 
 @font-face {
   font-family: "bootstrap-icons";
