@@ -3,7 +3,7 @@ import CursorFollow from './follow-cursor';
 import HeroHeadline from './hero-headline';
 const HeroSection = () => {
   return (
-    <div className='relative w-full h-[65vh] mx-auto
+    <div className='relative w-full max-sm:h-[65vh] mx-auto
         -z-20 sm:max-h-[calc(40rem)] 
         md:max-h-[calc(48rem)] 
         lg:max-h-[calc(64rem)] 
