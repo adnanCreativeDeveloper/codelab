@@ -5,6 +5,8 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import TextUsBtn from "@/components/home/hero-section/text-us-btn";
+import WhatsappPopUp from "@/components/home/hero-section/whatsapp-pop-up";
+import SidebarForm from "@/components/common/sidebar-form";
 // config.autoAddCss = false;
 
 // const geistSans = Geist({
@@ -34,6 +36,8 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {/* <TextUsBtn /> */}
+        <WhatsappPopUp />
+        <SidebarForm />
         {children}
         <Footer />
       </body>

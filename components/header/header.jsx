@@ -66,11 +66,11 @@ const Header = () => {
             <div>
               <DesktopNavbar />
             </div>
-            <div onClick={handleToggleNavItems} className='block cursor-pointer md:hidden'>
+            <div onClick={handleToggleNavItems} className='block cursor-pointer md:hidden pr-2'>
               <FontAwesomeIcon icon={faBars} className='text-2xl text-current' size='2x' />
             </div>
             <MobileNavbar handleToggleNavItems={handleToggleNavItems} toggleNavItmes={toggleNavItmes} />
-            <button className='bg-[#c90606] hover:bg-[var(--accent-hover)] text-white transition-all duration-100 ease-in-out lg:text-base text-sm px-3 lg:px-6 py-1 lg:py-2 rounded-lg font-semibold hidden md:block'>
+            <button className='sidebar-form-open cursor-pointer bg-red-600 hover:bg-[var(--accent-hover)] text-white transition-all duration-100 ease-in-out lg:text-base text-sm px-3 lg:px-6 py-1 lg:py-2 rounded-lg font-semibold hidden md:block'>
               Get in Touch
             </button>
           </div>
