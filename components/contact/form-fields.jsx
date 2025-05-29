@@ -9,24 +9,24 @@ import { notify } from '../common/notifications';
 
 const schema = Yup.object().shape({
   name: Yup.string()
-    .min(5, 'Must be at least 2 characters.') // Shorter, descriptive (adjusted min for 'name' if it's full name)
-    .max(50, 'Cannot exceed 50 characters.') // Shorter, descriptive
-    .required('Your full name is required here.'), // Specific, humble message
+    .min(5, 'Must be at least 5 characters.')
+    .max(50, 'Cannot exceed 50 characters.')
+    .required('Your full name is required here.'),
 
   email: Yup.string()
-    .email('Please enter a valid email.') // Shorter, descriptive
-    .required('An active email is required.'), // Specific, humble message
+    .email('Please enter a valid email.')
+    .required('An active email is required.'),
 
   number: Yup.string()
     .matches(
       /^((\+92)|(0092))-{0,1}\d{3}-{0,1}\d{7}$|^\d{11}$|^\d{4}-\d{7}$/,
-      'Please enter a valid Pakistani phone number.' // Descriptive match message
+      'Please enter a valid Pakistani phone number.'
     )
-    .required('A contact number is required.'), // Specific, humble message
+    .required('A contact number is required.'),
 
   source: Yup.string()
-    .notOneOf(['How did you find us?'], 'Please select a valid option.') // Descriptive notOneOf message
-    .required('Please tell us how you found us.'), // Specific, humble message
+    .notOneOf(['How did you find us?'], 'Please select a valid option.')
+    .required('Please tell us how you found us.'),
 });
 
 const infoMessages = {

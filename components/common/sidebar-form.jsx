@@ -9,23 +9,23 @@ import { notify } from './notifications';
 
 const schema = Yup.object().shape({
   user_first_name: Yup.string()
-    .min(5, 'Must be at least 5 characters.') // Shorter, descriptive
-    .max(50, 'Cannot exceed 50 characters.') // Shorter, descriptive
-    .required('Your first name is needed.'), // Specific, humble message
+    .min(5, 'Must be at least 5 characters.')
+    .max(50, 'Cannot exceed 50 characters.')
+    .required('Your first name is needed.'),
 
   user_last_name: Yup.string()
-    .min(3, 'Must be at least 3 characters.') // Shorter, descriptive
-    .max(50, 'Cannot exceed 50 characters.') // Shorter, descriptive
-    .required('Please enter your last name.'), // Specific, humble message
+    .min(3, 'Must be at least 3 characters.')
+    .max(50, 'Cannot exceed 50 characters.')
+    .required('Please enter your last name.'),
 
   user_email: Yup.string()
-    .email('Please enter a valid email.') // Shorter, descriptive
-    .required('An active email is required.'), // Specific, humble message
+    .email('Please enter a valid email.')
+    .required('An active email is required.'),
 
   user_message: Yup.string()
-    .min(10, 'Must be at least 10 characters.') // Shorter, descriptive
-    .max(1000, 'Cannot exceed 1000 characters.') // Shorter, descriptive
-    .required('Your message is required.'), // Specific, humble message
+    .min(10, 'Must be at least 10 characters.')
+    .max(1000, 'Cannot exceed 1000 characters.')
+    .required('Your message is required.'),
 });
 
 const infoMessages = {
