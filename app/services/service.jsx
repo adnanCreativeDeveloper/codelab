@@ -118,25 +118,25 @@ const Service = () => {
         </HeadingAnimation>
         <HeadingAnimation>
           <div className='font-semibold text-lg sm:text-xl text-[var(--surface)] text-center flex items-center gap-3 w-fit mx-auto'>
-            <div className="grid text-white bg-black rounded-full size-6 place-items-center">
+            <div className="shrink-0 grid text-white bg-black rounded-full size-6 place-items-center">
               <FontAwesomeIcon icon={faCheck} className='text-sm' />
             </div>
             <p>Need a website, app, or design? We’ve got you covered.</p>
           </div>
         </HeadingAnimation>
         <HeadingAnimation>
-          <div className='font-semibold text-lg sm:text-xl text-[var(--surface)] text-center mt-7 flex items-center gap-3 w-fit mx-auto'>
-            <div className="grid text-white bg-black rounded-full size-6 place-items-center">
+          <div className='font-semibold text-lg sm:text-xl text-[var(--surface)] text-center mt-7 flex items-start md:items-center gap-3 w-fit mx-auto'>
+            <div className="shrink-0 grid text-white bg-black rounded-full size-6 place-items-center">
               <FontAwesomeIcon icon={faCheck} className='text-sm' />
             </div>
             <p>Our team helps your business grow with smart online solutions.</p>
           </div>
         </HeadingAnimation>
         <div className="flex mx-auto mt-10 md:mt-16 item-center gap-7 w-fit">
-          <button className='hidden px-3 py-2 text-sm font-semibold text-center text-white transition-all ease-in-out bg-black rounded-lg cursor-pointer hover:bg-white hover:text-black duration-90 lg:text-base lg:px-6 lg:py-3 md:block'>
+          <button className='px-3 py-2 text-sm font-semibold text-center text-white transition-all ease-in-out bg-black rounded-lg cursor-pointer hover:bg-white hover:text-black duration-90 lg:text-base lg:px-6 lg:py-3 md:block'>
             Get Access <FontAwesomeIcon icon={faArrowRightLong} className='ml-2' />
           </button>
-          <button className='hidden px-3 py-2 text-sm font-semibold text-center text-black transition-all ease-in-out bg-white rounded-lg cursor-pointer hover:bg-black hover:text-white duration-90 lg:text-base lg:px-6 lg:py-3 md:block'>
+          <button className='px-3 py-2 text-sm font-semibold text-center text-black transition-all ease-in-out bg-white rounded-lg cursor-pointer hover:bg-black hover:text-white duration-90 lg:text-base lg:px-6 lg:py-3 md:block'>
             Book a call
           </button>
         </div>

@@ -7,7 +7,7 @@ const process_steps = [
   {
     title: "Project Planning & Requirements",
     description:
-      "Effective project planning ensures clear objectives, resource allocation, and structured execution, while requirement analysis identifies key functionalities and expectations.",
+      "Beyond initial scope, our adaptive project planning incorporates rolling wave forecasting and value stream mapping to ensure continuous alignment with market shifts and business outcomes.",
     img: "/images/home/development-process/point-1.png",
     styles: {
       top: 'top-[5.5rem]',
@@ -21,7 +21,7 @@ const process_steps = [
   {
     title: "Sprint Execution Process",
     description:
-      "Sprint execution involves breaking work into manageable tasks, prioritizing them, and ensuring efficient completion within the sprint cycle timeframe.",
+      "Our sprint execution leverages AI-powered backlog refinement and real-time dependency mapping, optimizing resource utilization and minimizing cross-team integration friction.",
     img: "/images/home/development-process/point-2.png",
     styles: {
       top: 'top-[9.5rem]',
@@ -35,7 +35,7 @@ const process_steps = [
   {
     title: "Daily Team Stand‑ups",
     description:
-      "Short, focused daily meetings help teams align on progress, discuss blockers, update priorities, and ensure smooth collaboration throughout the sprint.",
+      "Our dynamic stand-ups integrate sentiment analysis and proactive risk identification, transforming quick updates into actionable insights for immediate team optimization and morale boosting.",
     img: "/images/home/development-process/point-3.png",
     styles: {
       top: 'top-[12.5rem]',
@@ -49,7 +49,7 @@ const process_steps = [
   {
     title: "Review & Continuous Feedback",
     description:
-      "Regular review meetings and feedback loops foster continuous improvement, ensuring project deliverables align with expectations and necessary refinements are made.",
+      "Our feedback loop extends beyond traditional reviews, incorporating user behavior analytics and predictive quality assessments to inform iterative enhancements and future-proofing.",
     img: "/images/home/development-process/point-4.png",
     styles: {
       top: 'top-[15.5rem]',
@@ -98,7 +98,7 @@ const ProcessSteps = () => {
             <div
               className={`
                 ${item.styles.figureBg} rounded-3xl py-4 md:py-8
-                w-full h-full relative overflow-hidden
+                w-full relative overflow-hidden h-96 grid place-items-center
               `}
             >
               <Image
@@ -106,7 +106,7 @@ const ProcessSteps = () => {
                 width={255}
                 height={256}
                 alt={item.title}
-                className="w-auto mx-auto h-52 md:h-auto md:w-auto"
+                className="w-auto mx-auto object-contain h-full md:h-auto md:w-auto"
               />
             </div>
           </div>

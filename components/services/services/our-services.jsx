@@ -39,7 +39,7 @@ const OurServices = () => {
           <Animation>
             <div className='p-2 bg-white border-2 border-gray-200 md:p-5 rounded-xl md:rounded-3xl'>
               <div className='relative mb-5'>
-                <Image width={400} height={300} src={'/images/services/services-card/graphic-designing.jpeg'} className='w-full h-[400px] md:h-[360px] object-cover rounded-xl md:rounded-3xl' />
+                <Image width={400} height={300} src={'/images/services/services-card/graphic-designing.jpeg'} className='w-full h-[400px] md:h-[315px] lg:h-[360px] object-cover rounded-xl md:rounded-3xl' />
               </div>
               <div className='px-2 pt-1 sm:p-0'>
                 <h1 className='mb-4 text-xl font-bold text-black sm:text-2xl md:text-3xl'>Graphic Designing</h1>
@@ -48,9 +48,9 @@ const OurServices = () => {
             </div>
           </Animation>
           <Animation>
-            <div className='grid grid-cols-1 gap-5 p-2 bg-white border-2 border-gray-200 md:p-5 rounded-xl md:rounded-3xl md:grid-cols-2'>
+            <div className='grid grid-cols-1 gap-5 p-2 bg-white border-2 border-gray-200 md:p-5 rounded-xl md:rounded-3xl lg:grid-cols-2'>
               <div className="relative">
-                <Image width={400} height={300} src={'/images/services/services-card/web-development.jpg'} className='w-full h-[400px] md:h-[476px] object-cover rounded-xl md:rounded-3xl' />
+                <Image width={400} height={300} src={'/images/services/services-card/web-development.jpg'} className='w-full h-[400px] md:h-[200px] lg:h-[476px] object-cover rounded-xl md:rounded-3xl' />
               </div>
               <div className='px-2 pt-1 sm:p-0'>
                 <FontAwesomeIcon icon={faQuoteRight} className='text-5xl text-gray-400' />

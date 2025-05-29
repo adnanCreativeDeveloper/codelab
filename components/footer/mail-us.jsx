@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Animation from '../common/animation';
+import MailUsForm from './mail-us-form';
 
 const MailUs = () => {
   return (
@@ -13,11 +14,8 @@ const MailUs = () => {
             <h1 className='text-xl font-semibold text-white sm:text-3xl'>Subscribe to our newsletter to get updates to our latest collections</h1>
             <p className='mt-3 text-sm text-white sm:mt-7'>Stay updated with the latest tech trends and projects from Code Lab</p>
           </div>
-          <div className='relative mt-5'>
-            <input type="email" id='email' placeholder='Enter your email' className='py-2.5 md:py-5 px-3 bg-white rounded-lg w-full' />
-            <button className='font-semibold text-sm text-white absolute top-1/2 right-3 -translate-y-1/2 py-1.5 sm:py-2 px-3 sm:px-3.5 bg-[var(--accent)] rounded-lg'>
-              Subscribe
-            </button>
+          <div className='mt-5'>
+            <MailUsForm />
           </div>
           <p className='text-sm text-white mt-5'>You will be able to unsubscribe at any time. Read our privacy policy here.</p>
         </div>

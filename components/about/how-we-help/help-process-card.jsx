@@ -64,8 +64,8 @@ const HelpProcessCard = () => {
                 text-center md:text-left relative`}>
             <div className="mb-4">
               {item.icon === '/images/how-we-help/development-.jpg' && <Image
-                height={250}
-                width={250}
+                height={400}
+                width={400}
                 src={item.icon}
                 alt="CRM Icon"
                 className="object-cover w-full h-full"

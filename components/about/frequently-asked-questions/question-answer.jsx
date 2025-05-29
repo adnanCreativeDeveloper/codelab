@@ -2,7 +2,7 @@
 import Animation from '@/components/common/animation';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { uuidv7 } from 'uuidv7';
 const faqItems = [
@@ -58,21 +58,23 @@ const QuestionAnswer = () => {
       <Animation>
         <div className='space-y-6'>
           {faqItems.slice(0, 5).map((item) => (<div key={item.id} className='bg-white'>
-            <div onClick={() => handleAccordian(item.id)} className='flex items-center gap-4 cursor-pointer pb-2 first:pb-0'>
-              <div className='h-7 w-7 grid place-items-center rounded-full bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-all duration-300 ease-in-out'>
+            <div onClick={() => handleAccordian(item.id)} className='flex items-start gap-4 cursor-pointer pb-2 first:pb-0'>
+              <div className='shrink-0 h-7 w-7 mt-1 grid place-items-center rounded-full bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-all duration-300 ease-in-out'>
                 <FontAwesomeIcon icon={faAngleDown} className={`${isAccordian === item.id ? 'rotate-x-180' : ''} duration-300 font-extrabold`} />
               </div>
               <h2 className='text-gray-800 hover:text-[var(--accent)] text-xl font-bold'>{item.question}</h2>
             </div>
-            <motion.div initial={{ height: 0 }}
-              animate={{ height: isAccordian === item.id ? "auto" : 0 }}
-              transition={{ duration: 0.3 }}
-              className='pl-16 overflow-hidden'>
-              <motion.p initial={{ opacity: 0 }}
-                animate={{ opacity: isAccordian === item.id ? 1 : 0 }}
-                transition={{ duration: 0.3 }}
-                className='text-gray-500 text-sm mt-2'>{item.answer}</motion.p>
-            </motion.div>
+            <AnimatePresence mode="wait">
+              <motion.div initial={{ height: 0 }}
+                animate={{ height: isAccordian === item.id ? "auto" : 0 }}
+                transition={{ duration: 0.3, delay: 0.2 }}
+                className='pl-16 overflow-hidden'>
+                <motion.p initial={{ opacity: 0 }}
+                  animate={{ opacity: isAccordian === item.id ? 1 : 0 }}
+                  transition={{ duration: 0.3 }}
+                  className='text-gray-500 text-sm mt-2'>{item.answer}</motion.p>
+              </motion.div>
+            </AnimatePresence>
           </div>))}
         </div>
       </Animation>

@@ -62,9 +62,9 @@ export default function CursorFollow() {
         animate={{ x: pos.x - 64, y: pos.y - 64 }}
         transition={{ type: 'spring', stiffness: 300, damping: 25 }}
       >
-        <div className='sidebar-form-open'>
-          <span className="sidebar-form-open inline-block rotate-45 text-xl md:text-2xl font-bold">↑</span>
-          <p className='sidebar-form-open'>let's discus your idea</p>
+        <div>
+          <span className="inline-block rotate-45 text-xl md:text-2xl font-bold">↑</span>
+          <p>let's discus your idea</p>
         </div>
       </motion.div>
     </div>

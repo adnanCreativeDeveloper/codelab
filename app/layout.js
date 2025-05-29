@@ -7,6 +7,7 @@ import Footer from "@/components/footer/footer";
 import TextUsBtn from "@/components/home/hero-section/text-us-btn";
 import WhatsappPopUp from "@/components/home/hero-section/whatsapp-pop-up";
 import SidebarForm from "@/components/common/sidebar-form";
+import Notifications from "@/components/common/notifications";
 // config.autoAddCss = false;
 
 // const geistSans = Geist({
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {/* <TextUsBtn /> */}
+        <Notifications />
         <WhatsappPopUp />
         <SidebarForm />
         {children}

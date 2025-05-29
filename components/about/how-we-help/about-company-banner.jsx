@@ -7,7 +7,7 @@ const AboutCompanyBanner = () => {
       <div className="md:rounded-l-2xl overflow-hidden">
         <Image
           width={500}
-          height={500}
+          height={442}
           src="/images/how-we-help/seo.png"
           alt="Team working at CodeLab"
           className="w-full h-full object-cover bg-left rounded-none md:rounded-l-2xl"
