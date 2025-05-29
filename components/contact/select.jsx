@@ -14,7 +14,6 @@ const options = [
 ]
 
 const Select = ({ setValue, value }) => {
-  const [index, setIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const selectedIndex = options.findIndex(opt => opt.name === value);
   const toggleDropdown = () => setIsOpen(!isOpen);
@@ -25,7 +24,7 @@ const Select = ({ setValue, value }) => {
         <p onClick={toggleDropdown} className='px-3 py-2 cursor-pointer'>{options[selectedIndex > -1 ? selectedIndex : 0].name}</p>
         <motion.div initial={{ opacity: 0, display: 'none', y: 10, scaleY: 0.5 }} animate={{ opacity: isOpen ? 100 : 0, display: isOpen ? 'block' : 'none', y: isOpen ? 0 : 10, scaleY: isOpen ? 1 : 0.5 }} className='origin-top absolute left-0 w-full h-auto mt-3 top-full'>
           <ul className='w-full h-full overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg list-item'>
-            {options.map((item, i) => (<li onClick={() => { setIndex(i); toggleDropdown(); setValue('source', item.name, { shouldValidate: true }); }} key={uuidv7()} className='px-4 py-2 bg-green-100 cursor-pointer hover:bg-green-200'>{item.name}</li>))}
+            {options.map((item, i) => (<li onClick={() => { toggleDropdown(); setValue('source', item.name, { shouldValidate: true }); }} key={uuidv7()} className='px-4 py-2 bg-green-100 cursor-pointer hover:bg-green-200'>{item.name}</li>))}
           </ul>
         </motion.div>
       </div>
