@@ -56,7 +56,7 @@ export default function TimelineScrollImages() {
               height={641}
               src={item.img}
               alt={item.title}
-              className="absolute top-0 left-0 object-cover"
+              className="absolute top-0 left-0 object-cover w-full h-full"
             />
           </div>
         ))}
