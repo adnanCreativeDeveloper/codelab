@@ -1,11 +1,35 @@
 import SuggestedPosts from "@/components/blog/slug/suggested-posts";
 import PostHero from "@/components/blog/slug/post-hero";
 import Artical from "@/components/blog/slug/artical";
-import GetPostContent from "@/utill/get-post-content";
+// import GetPostContent from "@/utill/get-post-content";
 import { uuidv7 } from "uuidv7";
+import fs from 'fs';
+import matter from 'gray-matter';
+import GetPostMetaData from "@/utill/get-post-meta-data";
+
+const GetPostContent = (slug) => {
+
+  const filePath = `blog-posts-files/${slug}.md`;
+  const content = fs.readFileSync(filePath, 'utf-8');
+  const matterResult = matter(content);
+  return matterResult
+}
+
+export const generateStaticParams = async () => {
+  const posts = GetPostMetaData('blog-posts-files')
+  return posts.map((item) => ({ slug: item.slug }))
+}
+
+export async function generateMetaData({ params, searchParams }) {
+  const id = params?.slug ? ' . ' : ' '
+  return {
+    title: `Codelab ${id.replace('_', ' ')}`
+  }
+
+}
 
 export default async function BlogPostPage(props) {
-  const { slug } = await props.params.slug;
+  const slug = await props.params.slug;
   const postData = GetPostContent(slug);
   return (
     <div>
