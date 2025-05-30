@@ -34,7 +34,7 @@ const CategoryCard = ({ blog_arr, type }) => {
                 <div className='grid grid-cols-12 gap-2 p-3 pt-1 text-gray-600 md:gap-5'>
                   <div className='col-span-12'>
                     <h3 className='font-bold text-black'>{item.title.length > 20 ? `${item.title.substring(0, 20)}...` : item.title}</h3>
-                    <p className='md:text-sm text-base'>{item.description.length > 100 ? `${item.description.substring(0, 100)}` : item.description} <Link href={`/blog/${item.slug}`} className='text-blue-500 font-bold'>Discover More...</Link></p>
+                    <p className='md:text-sm text-base'>{item.description.length > 100 ? `${item.description.substring(0, 100)}` : item.description} <Link href={`blog/${item.slug}`} className='text-blue-500 font-bold'>Discover More...</Link></p>
                   </div>
                 </div>
               </div>
