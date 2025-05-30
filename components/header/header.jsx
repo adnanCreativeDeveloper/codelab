@@ -53,14 +53,16 @@ const Header = () => {
               alt="Logo White"
               width={177.125}
               height={48}
-              className={`object-contain transition-opacity duration-300 ease-in-out ${navbarBackground || pathName === '/services' || pathName === '/contact' ? 'opacity-0' : 'opacity-100'}`}
+              priority
+              className={`w-full h-auto object-contain transition-opacity duration-300 ease-in-out ${navbarBackground || pathName === '/services' || pathName === '/contact' ? 'opacity-0' : 'opacity-100'}`}
             />
             <Image
+              priority
               src="/images/logo/logo-black.png"
               alt="Logo Black"
               width={177.125}
               height={48}
-              className={`object-contain transition-opacity duration-300 ease-in-out absolute top-0 left-0 ${navbarBackground || pathName === '/services' || pathName === '/contact' ? 'opacity-100' : 'opacity-0'}`}
+              className={`w-full h-auto object-contain transition-opacity duration-300 ease-in-out absolute top-0 left-0 ${navbarBackground || pathName === '/services' || pathName === '/contact' ? 'opacity-100' : 'opacity-0'}`}
             />
           </Link>
             <div>

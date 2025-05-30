@@ -36,7 +36,7 @@ export const MobileNavbar = ({ handleToggleNavItems, toggleNavItmes }) => {
       <div>
         <ul className='flex items-center justify-between py-4 px-4 sm:px-12 text-red-500'>
           <li><Link href='/'>
-            <Image src={'/images/logo/logo-black.png'} alt='Logo' width={177.125} height={48} className='h-auto' />
+            <Image src={'/images/logo/logo-black.png'} alt='Logo' width={177.125} height={48} className='h-auto w-full' />
           </Link></li>
           <li onClick={handleToggleNavItems} className='cursor-pointer'>
             <FontAwesomeIcon icon={faTimes} className='text-current text-2xl' size="2x" />

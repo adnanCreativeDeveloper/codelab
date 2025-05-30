@@ -135,13 +135,15 @@ const BlogHomePageSlider = () => {
               transition={{ duration: 0.5 }}
               className=" inset-0 w-full h-full z-0"
             >
-              <Image
-                fill
-                src={img[prevIndex].img}
-                alt={img[prevIndex].title}
-                className="object-cover object-center w-auto h-full"
-                priority
-              />
+              <div className={`relative w-full h-full`}>
+                <Image
+                  fill
+                  src={img[prevIndex].img}
+                  alt={img[prevIndex].title}
+                  className="object-cover object-center"
+                  priority
+                />
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
@@ -155,13 +157,15 @@ const BlogHomePageSlider = () => {
             transition={{ duration: 0.5 }}
             className="absolute inset-0 w-full h-full z-10"
           >
-            <Image
-              fill
-              src={img[currentIndex].img}
-              alt={img[currentIndex].title}
-              className="object-cover object-center w-auto h-full"
-              priority
-            />
+            <div className="relative h-full w-full">
+              <Image
+                fill
+                src={img[currentIndex].img}
+                alt={img[currentIndex].title}
+                className="object-cover object-center"
+                priority
+              />
+            </div>
           </motion.div>
         </AnimatePresence>
       </div>

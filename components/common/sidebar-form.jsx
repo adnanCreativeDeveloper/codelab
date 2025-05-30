@@ -83,10 +83,10 @@ const SidebarForm = () => {
   return (
     <section className={`fixed top-0 ${isSidebar ? 'right-0' : '-right-full'} z-50 w-full h-screen sm:w-3/4 md:w-1/2 lg:w-1/3 duration-300 bg-black p-5 overflow-y-auto
     sm:max-h-[calc(40rem)] 
-        md:max-h-[calc(48rem)] 
-        lg:max-h-[calc(64rem)] 
-        xl:max-h-[calc(80rem)] 
-        2xl:max-h-[calc(96rem)]`}>
+        md:max-h-48rem 
+        lg:max-h-64rem 
+        xl:max-h-80rem 
+        2xl:max-h-96rem`}>
       <div id='sidebar-form-close' className="size-7 hover:bg-gray-700 cursor-pointer shadow-2xl hover:text-white duration-300 grid place-items-center rounded-full bg-white absolute top-5 right-5"><FontAwesomeIcon className='sidebar-form-close' icon={faTimes} /></div>
       <div>
         <div>

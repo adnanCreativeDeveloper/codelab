@@ -13,11 +13,11 @@ const Blog = () => {
           lg:max-w-[calc(64rem+55px)] 
           xl:max-w-[calc(80rem+55px)] 
           2xl:max-w-[calc(96rem+55px)]
-          sm:max-h-[calc(40rem)] 
-          md:max-h-[calc(48rem)] 
-          lg:max-h-[calc(64rem)] 
-          xl:max-h-[calc(80rem)] 
-          2xl:max-h-[calc(96rem)] 
+          sm:max-h-40rem
+          md:max-h-48rem
+          lg:max-h-64rem
+          xl:max-h-80rem
+          2xl:max-h-96rem
           mx-auto'>
         <div className="md:rounded-2xl overflow-hidden -top-[80px] md:-top-[72px] left-0 absolute w-full h-full">
           <BlogHomePageSlider />

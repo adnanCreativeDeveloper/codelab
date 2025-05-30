@@ -38,14 +38,14 @@ const LatestPost = ({ blog_arr }) => {
 
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
         {visiblePosts.slice(0, 2).map((item) => (<div key={item.slug} className='relative w-full overflow-hidden rounded-md h-80 shadow-xl'>
-          <div className="absolute top-0 left-0 w-full h-full rounded-lg -z-10">
+          <div className="absolute top-0 left-0 w-full h-full rounded-lg -z-10 h-80">
             <Image
               width={604}
               height={320}
               priority
               src={item.img}
               alt={item.title}
-              className='object-cover w-full rounded-lg shadow-lg h-80'
+              className='object-cover w-full rounded-lg shadow-lg h-auto'
             />
           </div>
           <div className="absolute left-3 top-3 bg-orange-200 shadow rounded-lg py-1.5 px-3.5 font-semibold w-fit text-sm text-orange-400">Design</div>

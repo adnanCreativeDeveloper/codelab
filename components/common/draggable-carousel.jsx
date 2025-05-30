@@ -17,9 +17,8 @@ const DraggableCarousel = ({ children }) => {
   useEffect(() => {
     const container = sliderRef.current
     const width = container.style.width
-    console.log(width);
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      setWindowWidth(width.innerWidth);
     };
 
     window.addEventListener('resize', handleResize);

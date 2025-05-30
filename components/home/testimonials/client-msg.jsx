@@ -68,13 +68,15 @@ const ClientMsg = () => {
         >
           <p className="mb-10">{testimonials[currentIndex].description}</p>
           <div className="flex items-center gap-6">
-            <Image
-              src={testimonials[currentIndex].img}
-              height={70}
-              width={70}
-              alt={testimonials[currentIndex].name}
-              className="w-14 h-14 object-cover rounded-full ring-2 ring-black"
-            />
+            <div className='relative w-14 h-14'>
+              <Image
+                src={testimonials[currentIndex].img}
+                height={70}
+                width={70}
+                alt={testimonials[currentIndex].name}
+                className="w-full h-auto object-cover rounded-full ring-2 ring-black"
+              />
+            </div>
             <div>
               <h4 className="text-lg sm:text-xl font-semibold">{testimonials[currentIndex].name}</h4>
               <p>{testimonials[currentIndex].role}</p>
