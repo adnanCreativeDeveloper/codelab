@@ -60,7 +60,7 @@ const BlogCard = ({ blog_arr }) => {
                     {item.description.length > 150 ? `${item.description.substring(0, 150)}...` : item.description}
                   </p>
                 </div>
-                <Link href={`blog/${item.slug}`} className="mt-3 bg-[#c90606] hover:bg-red-700 text-white transition-all duration-150 ease-in-out text-sm px-3 py-2 rounded-lg font-semibold inline-block w-full text-center">
+                <Link href={`/blog/${item.slug}`} className="mt-3 bg-[#c90606] hover:bg-red-700 text-white transition-all duration-150 ease-in-out text-sm px-3 py-2 rounded-lg font-semibold inline-block w-full text-center">
                   Continue Reading
                 </Link>
               </div>

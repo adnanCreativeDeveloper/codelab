@@ -5,8 +5,8 @@ import GetPostContent from "@/utill/get-post-content";
 import { uuidv7 } from "uuidv7";
 
 
-export default async function BlogPostPage(props) {
-  const postData = GetPostContent(props.params.slug);
+export default async function BlogPostPage({ params }) {
+  const postData = GetPostContent(params.slug);
   return (
     <div>
       <PostHero data={postData.data} />
