@@ -3,7 +3,7 @@ import Nav from "./nav";
 
 const getSlugs = GetPostMetaData('blog-posts-files').map((item) => item.slug)
 const slugs = [
-  'about', '/', '/blog', ...getSlugs
+  '/about', '/', '/blog', ...getSlugs
 ]
 
 const Header = () => {
