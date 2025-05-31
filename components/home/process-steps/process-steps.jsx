@@ -37,7 +37,7 @@ const ProcessSteps = () => {
       <div
         className='grid grid-cols-1 gap-3 md:grid-cols-12'>
 
-        <div className='col-span-1 md:col-span-5 flex items-center gap-4 sm:gap-7 md:gap-10 relative pl-5'>
+        <div className='col-span-1 md:col-span-5 flex items-center gap-4 sm:gap-7 md:gap-10 relative pl-5 overflow-hidden'>
           <motion.div initial={{ y: 100, x: 50 }}
             whileInView={{ y: 0, x: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}

@@ -1,8 +1,6 @@
-import Image from "next/image";
-import { uuidv7 } from "uuidv7";
 import HeadingAnimation from "@/components/common/heading-animation";
 import Animation from "@/components/common/animation";
-import DraggableCarousel from "@/components/common/draggable-carousel";
+import ProjectCard from "./project-card";
 
 const projects = [
   { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-1.jpg' },
@@ -38,39 +36,7 @@ const ProjectsWeBuild = () => {
 
       <Animation>
         <div className="overflow-x-hidden">
-          <div
-            className="overflow-hidden cursor-grab active:cursor-grabbing">
-            <DraggableCarousel>
-              <div
-                className="flex gap-10 w-full py-5">
-                {projects.map((item) => (
-                  <div
-                    key={uuidv7()}
-                    className="flex-shrink-0 w-80 bg-gray-100 rounded-3xl p-4"
-                  >
-                    <div className="flex items-center justify-between mb-4 text-sm md:text-xs lg:text-base">
-                      <div className="py-1 px-3 rounded-full bg-gray-200">
-                        <h3 className="text-gray-900 font-semibold">{item.title}</h3>
-                      </div>
-                      <div className="py-1 px-3 rounded-full bg-gray-200">
-                        <p className="text-gray-500">{item.date}</p>
-                      </div>
-                    </div>
-                    <div className="relative">
-                      <Image
-                        src={item.img}
-                        width={333}
-                        height={320}
-                        alt={item.title}
-                        className="object-conver w-full h-full rounded-3xl select-none pointer-events-none"
-                        draggable={false}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </DraggableCarousel>
-          </div>
+          <ProjectCard />
         </div>
       </Animation>
     </section>
