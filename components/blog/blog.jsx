@@ -20,7 +20,7 @@ const Blog = () => {
           2xl:max-h-96rem
           mx-auto'>
         <div className="md:rounded-2xl overflow-hidden -top-[80px] md:-top-[72px] left-0 absolute w-full h-full">
-          <BlogHomePageSlider />
+          <BlogHomePageSlider img={blog_arr} />
         </div>
       </div>
       <LatestPost blog_arr={blog_arr} />
