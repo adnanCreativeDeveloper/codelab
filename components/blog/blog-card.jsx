@@ -34,8 +34,7 @@ const BlogCard = ({ blog_arr }) => {
         }}
         modules={[Navigation]}
         spaceBetween={20}
-        slidesPerView={slidesPerView}
-      >
+        slidesPerView={slidesPerView}>
         {
           blog_arr.map((item) => (
             <SwiperSlide

@@ -1,7 +1,6 @@
-import SuggestedPosts from "@/components/blog/slug/suggested-posts";
+import SuggestedPosts from "@/components/blog/slug/suggested-posts/suggested-posts";
 import PostHero from "@/components/blog/slug/post-hero";
 import Artical from "@/components/blog/slug/artical";
-// import GetPostContent from "@/utill/get-post-content";
 import { uuidv7 } from "uuidv7";
 import fs from 'fs';
 import matter from 'gray-matter';

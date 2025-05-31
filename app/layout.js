@@ -22,7 +22,7 @@ import Notifications from "@/components/common/notifications";
 
 export const metadata = {
   title: "Codelab Enhanced Features",
-  description: "CodeLab.pk - Premier IT solutions institute offering comprehensive training in software development, web technologies, and digital skills. Join our hands-on learning environment to build your tech career.",
+  description: "CodeLab-three.vercel.app - Premier IT solutions institute offering comprehensive training in software development, web technologies, and digital skills. Join our hands-on learning environment to build your tech career.",
   icons: {
     icon: '/images/logo/codelab-logo-black.png'
   }

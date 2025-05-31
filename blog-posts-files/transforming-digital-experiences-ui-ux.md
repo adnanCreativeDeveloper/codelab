@@ -66,7 +66,7 @@ Businesses across industries invest in UI UX design services because they:
 
 UI UX design success starts with experts who comprehend their target market well. Designers need to understand how users think and feel about their products to design content effectively. Designers start with user research which uses interviews surveys and testing users in real situations to design products people can use easily. Design teams learn about users by doing research outside the office to invent personas with true-to-life diversity.
 
-![](https://codelab.pk/wp-content/uploads/2025/04/ui-ux-design-services.jpg)
+![](/images/blog/blog-md/ui-ux-1.jpg)
 
 After research ends the design team creates wireframes and prototypes. Wireframes function as planning documents that show how things like buttons, images, and text will fit in different areas of the design. Relationships and businesses work well by showing users an interactive testing model early during product development. The design loop helps users validate their expectations which reduces changes required during product development.
 

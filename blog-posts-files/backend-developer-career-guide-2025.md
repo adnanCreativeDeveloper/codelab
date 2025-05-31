@@ -42,7 +42,7 @@ A backend developer combines education, technical skills, and hands-on experienc
 
 Developers can use many frameworks, such as Spring Boot (for Java) and Django (for Python), for faster development. Indeed, having solid database knowledge is a must if you want to manage and retrieve data. If you want to be an aspiring backend developer and make an impression on the job market, then you must try to get involved in real-world projects, participate in open-source projects, and make strong portfolios.
 
-![what-do-back-end-developers-do](https://codelab.pk/wp-content/uploads/2025/05/what-do-back-end-developers-do.jpg)
+![what-do-back-end-developers-do](/images/blog/blog-md/backend-1.jpg)
 
 Getting practical experience through work experience, internships, or personal coding projects helps you develop problem-solving and coding skills under expert supervision and helps you in your future employers. A strong resume and a well-documented portfolio of backend development projects will increase job prospects and open doors to a successful backend development career.
 
@@ -75,7 +75,7 @@ Backend optimization improves website performance by:
 
 Backend technology is key to your project meeting your business goals. There are many factors to consider during the selection process. The more knowledge you possess about these elements, the simpler it will be to select the technology that best suits your needs. Furthermore, the scalability and performance criteria of your system are important, as they directly influence its capacity to manage heavy traffic and development.
 
-![what usually a java backend developer do](https://codelab.pk/wp-content/uploads/2025/05/what-usually-a-java-backend-developer-do.jpg)
+![what-do-back-end-developers-do](/images/blog/blog-md/backend-2.jpg)
 
 Developing quickly and being flexible is also important. Choosing the right backend technology will allow rapid development and flexibility to make changes and adapt as needed. The technology should integrate seamlessly with front-end and third-party services to ensure everything works smoothly across all application layers. Various backend languages such as Java, Python, Node.js, and PHP have different strengths, so you need to evaluate them individually.
 

@@ -30,7 +30,7 @@ const CategoryCard = ({ blog_arr, type }) => {
                 />
               </div>
               <div className="absolute left-3 top-3 bg-orange-200 shadow rounded-lg py-1.5 px-3.5 font-semibold w-fit text-sm text-orange-400">{item.category}</div>
-              <div className="absolute bottom-0 left-0 w-full h-30 md:h-24 bg-gray-200/50 backdrop-blur-md">
+              <div className="absolute bottom-0 left-0 w-full h-30 md:h-28 bg-gray-200/50 backdrop-blur-md">
                 <div className='grid grid-cols-12 gap-2 p-3 pt-1 text-gray-600 md:gap-5'>
                   <div className='col-span-12'>
                     <h3 className='font-bold text-black'>{item.title.length > 20 ? `${item.title.substring(0, 20)}...` : item.title}</h3>

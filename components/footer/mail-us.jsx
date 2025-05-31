@@ -6,8 +6,8 @@ const MailUs = () => {
   return (
     <Animation>
       <div className='grid grid-cols-1 md:grid-cols-2 rounded-lg px-2 py-4 sm:px-3 sm:py-5 md:px-4 md:py-6 bg-[var(--surface)] my-5 md:my-10 gap-10'>
-        <div className='relative'>
-          <Image src={'/images/home/testimonial/Software-engineer-amico.png'} alt='Software-engineer-amico' height={240} width={240} className='object-contain h-auto mx-auto w-60' />
+        <div className='relative w-60 mx-auto h-full'>
+          <Image src={'/images/logo/Software-engineer-amico.png'} alt='Software-engineer-amico' height={240} width={240} className='object-contain h-auto mx-auto w-full' />
         </div>
         <div>
           <div>

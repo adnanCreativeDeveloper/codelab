@@ -28,11 +28,12 @@ const PostHero = ({ data }) => {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className='p-2 absolute top-0 left-0 z-10 flex items-end pb-20 pl-5 justify-start w-full h-full bg-black/70'>
+        <div className='p-2 absolute top-0 left-0 z-10 flex items-end pb-10 md:pb-20 pl-5 justify-start w-full h-full bg-black/70'>
           <div className='pb-10 md:pl-24 md:pr-20'>
-            <h1 className='text-4xl font-bold text-white text-shadow-black'>{data.title}</h1>
+            <h1 className='text-2xl md:text-4xl font-bold text-white text-shadow-black'>{data.title}</h1>
             <p className="mt-4 font-semibold text-gray-200 max-sm:text-sm">{data.description}</p>
             <div className="flex flex-wrap items-start justify-items-start gap-3 mt-7 w-full md:w-1/2">
+              <div className="bg-orange-800/50 shadow rounded-lg py-1.5 px-3.5 font-semibold w-fit text-sm text-orange-400">{data.category}</div>
               {/* {data.key_words.map((item) => (<div key={uuidv7()} className="bg-orange-800/50 shadow rounded-lg py-1.5 px-3.5 font-semibold w-fit text-sm text-orange-400">{item}</div>))} */}
             </div>
           </div>

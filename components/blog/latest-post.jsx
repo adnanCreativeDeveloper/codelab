@@ -49,21 +49,21 @@ const LatestPost = ({ blog_arr }) => {
             />
           </div>
           <div className="absolute left-3 top-3 bg-orange-200 shadow rounded-lg py-1.5 px-3.5 font-semibold w-fit text-sm text-orange-400">Design</div>
-          <div className="absolute bottom-0 left-0 w-full h-30 md:h-20 bg-gray-200/50 backdrop-blur-md">
-            <div className='grid grid-cols-12 gap-2 p-3 text-gray-600 md:gap-5'>
+          <div className="absolute bottom-0 left-0 w-full h-30 md:h-20 bg-gray-200/50 backdrop-blur-xl">
+            <div className='grid grid-cols-12 gap-2 p-3 text-gray-900 md:gap-5'>
               <div className='col-span-12 md:col-span-8'>
                 <h3 className='font-bold text-black'>{item.title.length > 25 ? `${item.title.substring(0, 25)}...` : item.title}</h3>
                 <p className='text-xs '>{item.description.length > 100 ? `${item.description.substring(0, 100)}...` : item.description} <Link href={`/blog/${item.slug}`} className='text-blue-500 font-bold'>Learn More...</Link></p>
               </div>
               <div className='flex items-center justify-end col-span-12 gap-3 md:col-span-4'>
-                <p className="flex items-center gap-2 text-sm">
+                {/* <p className="flex items-center gap-2 text-sm">
                   <FontAwesomeIcon icon={faEye} className='' />
                   <span>300</span>
                 </p>
-                <p className="text-sm">-</p>
+                <p className="text-sm">-</p> */}
                 <p className="flex items-center gap-2 text-sm">
                   <FontAwesomeIcon icon={faClock} className='' />
-                  <span>300</span>
+                  <span>10 min</span>
                 </p>
               </div>
             </div>

@@ -32,9 +32,11 @@ The markup language HTML serves to organize content presentation instead of func
 
 A world without HTML would lead to the non-existence of the internet that exists today. The application implements structure at the core of web page creation and allows accessibility across device ranges. A combination of HTML with CSS and JavaScript produces websites which function effectively and deliver visual charm to end-users. Whether you are a beginner or an experienced developer, understanding HTML is essential.
 
+![html-viewer-pdf-conversion](/images/blog/blog-md/html-viewer-1.jpg)
+
 ### **How HTML viewer Works**
 
-A webpage structure is defined through tags and elements which are part of HTML’s system. The browser system reads HTML file code to produce content output following the instructions. An HTML document uses two main sections: the head section contains metadata and styles and the body section presents all visible [webpage content](https://codelab.pk/top-blog-writing-services-with-seo-focus-in-2025/).
+A webpage structure is defined through tags and elements which are part of HTML’s system. The browser system reads HTML file code to produce content output following the instructions. An HTML document uses two main sections: the head section contains metadata and styles and the body section presents all visible [webpage content](/blog/top-blog-writing-seo-2025).
 
 The HTML document contains tags that represent all its elements including:
 
@@ -73,7 +75,7 @@ Once the file is saved with a html extension, you can open it in any web browser
 
 ## How to Use an HTML Viewer
 
-An HTML viewer serves as a tool which enables users to display HTML code like a browser for inspection purposes. HTML viewers support the needs of [developers](https://codelab.pk/backend-developer-a-guide-to-build-your-career-in-2025/) as well as students in addition to those who want to learn HTML. The principal applications for HTML viewers include:
+An HTML viewer serves as a tool which enables users to display HTML code like a browser for inspection purposes. HTML viewers support the needs of [developers](/blog/backend-developer-career-guide-2025) as well as students in addition to those who want to learn HTML. The principal applications for HTML viewers include:
 
 When receiving an HTML file you can use an HTML viewer to access its raw code structure.
 

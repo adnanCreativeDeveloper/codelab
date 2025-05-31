@@ -30,7 +30,7 @@ At Codelab, we know how dynamic content marketing and SEO change. Working with s
 
 Search engines are more intelligent; users are more discerning; and attention spans are shorter. This makes having well-optimized blogs with actual value significant. Content now speaks more of experience, relevance, and intent than key_words.
 
-![blog-writing-services](https://codelab.pk/wp-content/uploads/2025/05/SEO-blog-writing-services1.png)
+![blog-writing-services](/images/blog/blog-md/onpage-seo-4.jpg)
 
 ## **SEO-Driven Material Gets the Click**
 
@@ -47,6 +47,8 @@ Excellent content writing is a mix of ideas and facts. Search ranks depend on te
 ## **Characteristics of the Superior Blog Writing Services**
 
 Knowing your expectations guides your selection of a service. When choosing blog writing services packages, consider the depth, adaptability, and help provided.
+
+![blog-writing-services](/images/blog/blog-md/onpage-seo-2.jpg)
 
 ### **1\. Research on Competencies and key_words**
 
@@ -118,7 +120,7 @@ At Codelab, we combine narrative with technology knowledge. Our packages for blo
 
 As we know, no two companies are the same. Working directly with you, our team helps to grasp your brand, audience, and goals. We then design custom blog plans combining creative quality with SEO best practices. We scale with your needs, whether your requirements call for one post every week or a full-scale content strategy.
 
-In 2025, there will be more than blogs. It’s about building digital experiences of conversion, inspiration, and information. [Codelab](https://codelab.pk/) makes it possible.
+In 2025, there will be more than blogs. It’s about building digital experiences of conversion, inspiration, and information. [Codelab](/) makes it possible.
 
 ## **Conclusion**
 

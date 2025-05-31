@@ -24,9 +24,11 @@ slug: top-figma-alternatives-2025
 
 Particularly with new advancements like Figma’s new UI and Figma Code Connect, which are amazing but might not fit everyone’s workflow, designers and developers are reevaluating the tools they use in 2025. Many are looking to Figma alternatives that fit various platforms and design requirements as demand for flexibility, affordability, and creativity rises and affects diverse platforms.
 
-[Codelab](https://codelab.pk/) has examined a wide spectrum of UI/UX design tools to maximize processes for teams and individuals. Each of the 27 best Figma alternatives in 2025 has strengths—some are free, some are open-source, and a few are driven by innovative artificial intelligence technologies, which have been compiled below. This collection has something for you regardless of your Windows, macOS, Linux, or mobile device use.
+[Codelab](/) has examined a wide spectrum of UI/UX design tools to maximize processes for teams and individuals. Each of the 27 best Figma alternatives in 2025 has strengths—some are free, some are open-source, and a few are driven by innovative artificial intelligence technologies, which have been compiled below. This collection has something for you regardless of your Windows, macOS, Linux, or mobile device use.
 
 ## **Here are 27 Top Figma Alternatives**
+
+![figma alternatives](/images/blog/blog-md/figma-alternatives.jpg)
 
 Learn the top 27 Figma alternatives for Windows, Mac, Linux, and mobile in 2025. Look at free, open-source, AI-powered design tools ideal for teams and UI/UX experts.
 
@@ -110,7 +112,7 @@ Alva especially helps design systems as this live-design environment guarantees 
 
 ### **14\. Akira**
 
-Though still under development, Akira is a Linux-native [UI/UX](https://codelab.pk/transforming-digital-experiences-with-ui-ux-design-services/) design tool that promises to be helpful to the open-source community. It seeks to provide Linux users with limited choices today with modern UI design elements.
+Though still under development, Akira is a Linux-native [UI/UX](/blog/transforming-digital-experiences-ui-ux) design tool that promises to be helpful to the open-source community. It seeks to provide Linux users with limited choices today with modern UI design elements.
 
 Thanks to its lightweight construction and community-driven path map, it’s one to watch in 2025.
 

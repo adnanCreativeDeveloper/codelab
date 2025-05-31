@@ -67,7 +67,7 @@ const img = [
   {
     title: 'QA Tester Vacancy 2025 – Jobs, Salary & Skills Guide',
     description: 'Find out everything you need to know about QA Tester vacancies in 2025, including job roles, average salaries, and essential skills. This guide covers different types of QA testing and recommended degrees to build a successful career in quality assurance.',
-    img: '/images/blog/blogs/bug-detection.png',
+    img: '/images/blog/blogs/qa-testing-1.jpg',
     slug: 'mearn-stack-javascript-development',
   },
   {
@@ -140,7 +140,7 @@ const BlogHomePageSlider = () => {
                   fill
                   src={img[prevIndex].img}
                   alt={img[prevIndex].title}
-                  className="object-cover object-center"
+                  className="object-cover object-center w-full h-auto"
                   priority
                 />
               </div>
@@ -162,7 +162,7 @@ const BlogHomePageSlider = () => {
                 fill
                 src={img[currentIndex].img}
                 alt={img[currentIndex].title}
-                className="object-cover object-center"
+                className="object-cover object-center w-full h-auto"
                 priority
               />
             </div>

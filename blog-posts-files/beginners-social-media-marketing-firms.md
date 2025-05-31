@@ -51,7 +51,7 @@ Social media marketer is personnel with expert knowledge in sourcing and impleme
 
 **Measurable Results:** They understand the best way towards analyzing your performance, and how one can manage to change some of the aspects, to ensure that you get the best out of your investment.
 
-![social media marketing firms](https://codelab.pk/wp-content/uploads/2025/05/10.png)
+![social media marketing firms](/images/blog/blog-md/social-media-1.jpg)
 
 ## **Advantages of hiring Social Media Marketing firms**
 
@@ -76,6 +76,8 @@ Social media marketing firms employ means of tracking engagement, reach, and man
 5.  **Improved Brand Visibility**
 
 For social media marketing firms, comes the opportunity to create effective engagement strategies that will help turn the heads of your brand among intense competition. They understand how your content can be made popular and people guess so without buying paid ads.
+
+![social media marketing firms](/images/blog/blog-md/social-media-2.jpg)
 
 ## **Key Services Offered by Social Media Marketing Firms and Their Benefits**
 
