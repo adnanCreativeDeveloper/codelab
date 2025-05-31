@@ -9,7 +9,7 @@ import remarkRehype from 'remark-rehype'
 import { unified } from 'unified'
 import React from 'react';
 
-async function Artical({ content }) {
+async function Article({ content }) {
   // const processor = unified()
   //   .use(remarkParse)
   //   .use(remarkRehype)
@@ -32,4 +32,4 @@ async function Artical({ content }) {
   );
 }
 
-export default Artical;
+export default Article;

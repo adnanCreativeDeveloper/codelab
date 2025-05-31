@@ -54,8 +54,8 @@ const HelpProcessCard = () => {
   return (
     <>
       {how_we_help.map((item, i) => (
-        <Animation>
-          <div key={uuidv7()}
+        <Animation key={uuidv7()}>
+          <div
             className={`${item.title ? 'bg-[#f5f2f2] hover:shadow-md pt-8 px-6 pb-4' : 'bg-white pt-0 px-0 pb-0'} ${!item.title && 'hidden md:block'} text-black rounded-lg 
                 hover:rounded-lg hover:bg-white 
                 w-full max-w-3xl mx-auto 

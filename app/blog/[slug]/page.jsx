@@ -1,44 +1,54 @@
 import SuggestedPosts from "@/components/blog/slug/suggested-posts/suggested-posts";
 import PostHero from "@/components/blog/slug/post-hero";
-import Artical from "@/components/blog/slug/artical";
+import Article from "@/components/blog/slug/article";
 import { uuidv7 } from "uuidv7";
 import fs from 'fs';
 import matter from 'gray-matter';
 import GetPostMetaData from "@/utill/get-post-meta-data";
+import { notFound } from "next/navigation";
 
 const GetPostContent = (slug) => {
-
-  const filePath = `blog-posts-files/${slug}.md`;
-  const content = fs.readFileSync(filePath, 'utf-8');
-  const matterResult = matter(content);
-  return matterResult
-}
+  try {
+    const filePath = `blog-posts-files/${slug}.md`;
+    const content = fs.readFileSync(filePath, "utf-8");
+    const matterResult = matter(content);
+    return matterResult;
+  } catch (err) {
+    return null;
+  }
+};
 
 export const generateStaticParams = async () => {
-  const posts = GetPostMetaData('blog-posts-files')
-  return posts.map((item) => ({ slug: item.slug }))
+  const posts = GetPostMetaData("blog-posts-files");
+  return posts.map((item) => ({ slug: item.slug }));
+};
+
+function capitalize(text) {
+  return text.split(' ').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
 }
 
-export async function generateMetaData({ params, searchParams }) {
-  const id = params?.slug ? ' . ' : ' '
+export async function generateMetadata({ params }) {
   return {
-    title: `Codelab ${id.replace('_', ' ')}`
-  }
-
+    title: `Codelab | ${capitalize(params.slug.replace(/-/g, " "))}`,
+    description: `Read more about ${params.slug} on the Codelab blog.`,
+  };
 }
 
 export default async function BlogPostPage(props) {
   const slug = await props.params.slug;
   const postData = GetPostContent(slug);
+  if (!postData) return notFound();
+
+  const { data, content } = postData;
   return (
     <div>
-      <PostHero data={postData.data} />
+      <PostHero data={data} />
       <div className='container p-2 mx-auto'>
         <div className="grid grid-cols-12 gap-5 pb-10 mx-auto">
           <div className="col-span-1 hidden lg:block"></div>
 
           <div className="col-span-12 lg:col-span-6 mx-auto bg-green-300 w-fit py-10 px-5 rounded-lg shadow-lg">
-            <Artical content={postData.content} />
+            <Article content={content} />
           </div>
           <div className='col-span-12 lg:col-span-4 max-sm:mt-5'>
             <div>

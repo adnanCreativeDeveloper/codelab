@@ -25,7 +25,6 @@ const Header = () => {
     };
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      // console.log(scrollTop);
       const trashold = 5;
       if (scrollTop > trashold) {
         setNavbarBackground(true);
