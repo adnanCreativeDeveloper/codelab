@@ -13,7 +13,7 @@ const BlogHomePageSlider = ({ img }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
     <div className='relative w-full h-full'>
-      <div className="w-full h-full bg-amber-500 overflow-hidden">
+      <div className="w-full h-full overflow-hidden">
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           loop={true}

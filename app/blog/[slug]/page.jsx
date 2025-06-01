@@ -48,7 +48,7 @@ export default async function BlogPostPage(props) {
         <div className="grid grid-cols-12 gap-5 pb-10 mx-auto">
           <div className="col-span-1 hidden lg:block"></div>
 
-          <div className="col-span-12 lg:col-span-6 mx-auto bg-green-300 w-fit py-10 px-5 rounded-lg shadow-lg">
+          <div className="col-span-12 lg:col-span-6 mx-auto bg-orange-300 w-fit py-10 px-5 rounded-lg shadow-lg">
             <Article content={content} />
           </div>
           <div className='col-span-12 lg:col-span-4 max-sm:mt-5'>
