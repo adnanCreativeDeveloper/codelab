@@ -1,4 +1,5 @@
 import Animation from "@/components/common/animation";
+import placeholders from "@/lib/placeholders";
 import Image from "next/image";
 import { uuidv7 } from "uuidv7";
 
@@ -68,6 +69,8 @@ const HelpProcessCard = () => {
                 width={400}
                 src={item.icon}
                 alt="CRM Icon"
+                placeholder='blur'
+                blurDataURL={placeholders[item.icon]}
                 className="object-cover w-full h-full"
               />}
               {item.icon && item.title && <Image
@@ -76,6 +79,8 @@ const HelpProcessCard = () => {
                 src={item.icon}
                 alt="CRM Icon"
                 className="w-12 h-12"
+                placeholder='blur'
+                blurDataURL={placeholders[item.icon]}
               />}
             </div>
             {item.title}

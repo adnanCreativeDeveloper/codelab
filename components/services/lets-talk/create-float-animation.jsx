@@ -1,4 +1,5 @@
 'use client'
+import placeholders from '@/lib/placeholders';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
@@ -45,6 +46,8 @@ const CreateFloatAnimation = () => {
             width={48}
             height={48}
             className="object-cover size-12"
+            placeholder='blur'
+            blurDataURL={placeholders[image.src]}
           />
         </motion.div>
       ))}

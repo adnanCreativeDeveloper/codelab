@@ -1,8 +1,9 @@
-import BlogHomePageSlider from './blog-home-page-slider';
+// import BlogHomePageSlider from './blog-home-page-slider';
 import BlogCardsSlider from './blog-cards-slider';
 import LatestPost from './latest-post';
 import BlogCategories from './blog-categories/blog-categories';
 import GetPostMetaData from '@/utill/get-post-meta-data';
+import BlogHomePageSlider from './blog-home-page-slider';
 const blog_arr = GetPostMetaData('blog-posts-files');
 const Blog = () => {
   return (

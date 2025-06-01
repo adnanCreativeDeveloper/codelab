@@ -1,4 +1,5 @@
 'use client'
+import placeholders from "@/lib/placeholders";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -36,6 +37,8 @@ export default function PostCard({ blog_arr }) {
                     alt={item.title}
                     className="object-cover w-full h-full duration-300"
                     src={item.img}
+                    placeholder='blur'
+                    blurDataURL={placeholders[item.img]}
                 />
             </div>
             <div className="col-span-8">

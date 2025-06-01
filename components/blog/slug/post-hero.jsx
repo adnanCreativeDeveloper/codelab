@@ -1,3 +1,4 @@
+import placeholders from '@/lib/placeholders';
 import Image from 'next/image';
 import React from 'react';
 import { uuidv7 } from 'uuidv7';
@@ -25,6 +26,8 @@ const PostHero = ({ data }) => {
             src={data.img}
             alt={data.title}
             fill
+            placeholder='blur'
+            blurDataURL={placeholders[item.img]}
             className="object-cover w-full h-full"
           />
         </div>

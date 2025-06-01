@@ -1,3 +1,4 @@
+import placeholders from '@/lib/placeholders';
 import GetPostMetaData from '@/utill/get-post-meta-data';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -22,6 +23,8 @@ const SuggestedPosts = () => {
             alt={item.title}
             className="object-cover w-full h-full duration-300"
             src={item.img}
+            placeholder='blur'
+            blurDataURL={placeholders[item.img]}
           />
         </div>
         <div className="col-span-8">

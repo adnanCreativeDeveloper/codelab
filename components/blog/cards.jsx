@@ -5,6 +5,7 @@ import { uuidv7 } from 'uuidv7';
 const blog_arr = GetPostMetaData('blog-posts-files');
 import Image from 'next/image';
 import Link from 'next/link';
+import placeholders from '@/lib/placeholders';
 
 const Cards = () => {
   return (
@@ -20,6 +21,8 @@ const Cards = () => {
             alt={item.title}
             className="object-cover w-full duration-300 h-60"
             src={item.img}
+            placeholder='blur'
+            blurDataURL={placeholders[item.img]}
           />
         </div>
         <div className="mt-4">

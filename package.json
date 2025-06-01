@@ -2,11 +2,13 @@
   "name": "codelab-inhanced-featchers",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate:placeholders": "node scripts/generate-placeholders.mjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -14,6 +16,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@hookform/resolvers": "^5.0.1",
+    "@plaiceholder/next": "^3.0.0",
     "bootstrap-icons": "^1.13.1",
     "framer-motion": "^12.11.3",
     "gray-matter": "^4.0.3",
@@ -31,6 +34,7 @@
     "remark-html": "^16.0.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
+    "sharp": "^0.34.2",
     "shiki": "^3.4.2",
     "swiper": "^11.2.8",
     "unified": "^11.0.5",

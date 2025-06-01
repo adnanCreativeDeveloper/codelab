@@ -6,6 +6,7 @@ import Image from "next/image";
 import { uuidv7 } from "uuidv7";
 import TeamMotion from "./team-motion";
 import HeadingAnimation from "@/components/common/heading-animation";
+import placeholders from "@/lib/placeholders";
 
 
 const team = [
@@ -78,6 +79,8 @@ const OurTeam = () => {
                     className="object-cover rounded-full"
                     src={item.img}
                     alt={item.name}
+                    placeholder='blur'
+                    blurDataURL={placeholders[item.img]}
                   />
                   <div className="mt-2 card-info">
                     <h4 className="text-lg font-semibold sm:text-xl">{item.name}</h4>

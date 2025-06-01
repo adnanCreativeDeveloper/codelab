@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { uuidv7 } from 'uuidv7';
+import placeholders from '@/lib/placeholders';
 
 const projects = [
     { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-1.jpg' },
@@ -59,6 +60,8 @@ export default function ProjectCard() {
                                 alt={item.title}
                                 className="object-conver w-full h-full rounded-3xl select-none pointer-events-none"
                                 draggable={false}
+                                placeholder="blur"
+                                blurDataURL={placeholders[item.img]}
                             />
                         </div>
                     </div>

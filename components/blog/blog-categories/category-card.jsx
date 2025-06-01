@@ -1,4 +1,5 @@
 'use client'
+import placeholders from '@/lib/placeholders';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -19,14 +20,16 @@ const CategoryCard = ({ blog_arr, type }) => {
           <div>
             {/* <Link href={`/blog/${item.slug}`}> */}
             <div className='relative w-full overflow-hidden rounded-md min-h-80 shadow-xl'>
-              <div className="absolute top-0 left-0 w-full h-full rounded-lg -z-10 h-80">
+              <div className="absolute top-0 left-0 w-full rounded-lg -z-10 h-80">
                 <Image
                   width={286}
                   height={320}
                   priority
                   src={item.img}
                   alt={item.title}
-                  className='object-cover w-full rounded-lg shadow-lg h-auto'
+                  placeholder='blur'
+                  blurDataURL={placeholders[item.img]}
+                  className='object-cover w-full rounded-lg shadow-lg h-full'
                 />
               </div>
               <div className="absolute left-3 top-3 bg-orange-200 shadow rounded-lg py-1.5 px-3.5 font-semibold w-fit text-sm text-orange-400">{item.category}</div>

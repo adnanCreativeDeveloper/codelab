@@ -1,5 +1,6 @@
 'use client'
 
+import placeholders from "@/lib/placeholders";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { uuidv7 } from "uuidv7";
@@ -106,6 +107,8 @@ const ProcessSteps = () => {
                 width={255}
                 height={256}
                 alt={item.title}
+                placeholder='blur'
+                blurDataURL={placeholders[item.img]}
                 className="w-auto mx-auto object-contain h-full md:h-auto md:w-auto"
               />
             </div>

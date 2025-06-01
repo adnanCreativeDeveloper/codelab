@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { uuidv7 } from 'uuidv7';
+import placeholders from '@/lib/placeholders';
 const BlogCard = ({ blog_arr }) => {
   const [slidesPerView, setSlidesPerView] = useState(4);
   useEffect(() => {
@@ -48,6 +49,8 @@ const BlogCard = ({ blog_arr }) => {
                   alt={item.title}
                   className="object-cover w-full duration-300 h-60"
                   src={item.img}
+                  placeholder='blur'
+                  blurDataURL={placeholders[item.img]}
                 />
               </div>
               <div className="mt-4">

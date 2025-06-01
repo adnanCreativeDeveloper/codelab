@@ -2,74 +2,28 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import placeholders from '@/lib/placeholders';
-import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
-import 'swiper/css/navigation';
+import { useState } from "react";
 import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import placeholders from "@/lib/placeholders";
+
 const BlogHomePageSlider = ({ img }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [prevIndex, setPrevIndex] = useState(null);
-  const [direction, setDirection] = useState(1);
-
-  useEffect(() => {
-    const handleTimer = () => {
-      setPrevIndex(currentIndex);
-      setDirection(1);
-      setCurrentIndex((prev) => (prev + 1) % img.length);
-    };
-    const intervalId = setInterval(handleTimer, 5000);
-    return () => clearInterval(intervalId);
-  }, [currentIndex, img.length]);
   return (
     <div className='relative w-full h-full'>
-      <div className="relative w-full h-full overflow-hidden bg-amber-500">
-        <AnimatePresence mode="wait">
-          {prevIndex !== null && (
-            <motion.div
-              key={`prev-${prevIndex}`}
-              custom={direction}
-              initial={{ x: 0 }}
-              animate={{ x: direction === 1 ? '-100%' : '100%' }}
-              exit={{}}
-              transition={{ duration: 0.5 }}
-              className=" inset-0 w-full h-full z-0"
-            >
-              <div className={`relative w-full h-full`}>
-                <Image
-                  fill
-                  src={img[prevIndex].img}
-                  alt={img[prevIndex].title}
-                  className="object-cover object-center w-full h-auto"
-                  priority
-                />
+      <div className="w-full h-full bg-amber-500 overflow-hidden">
+        <Swiper modules={[Autoplay]} loop={true} autoplay={{ delay: 5000, disableOnInteraction: false }} spaceBetween={0} slidesPerView={1} speed={500} onSlideChange={(swiper) => setCurrentIndex(swiper.activeIndex)}>
+          {img.map((item, idx) => (
+            <SwiperSlide key={idx}>
+              <div className="relative h-[100vh] w-full">
+                <Image src={item.img} alt={item.title} layout="fill" placeholder="blur" blurDataURL={placeholders[item.img]} className="object-cover h-full w-full" />
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={`current-${currentIndex}`}
-            custom={direction}
-            initial={{ x: direction === 1 ? '100%' : '-100%' }}
-            animate={{ x: 0 }}
-            exit={{}}
-            transition={{ duration: 0.5 }}
-            className="absolute inset-0 w-full h-full z-10"
-          >
-            <div className="relative h-full w-full">
-              <Image
-                fill
-                src={img[currentIndex].img}
-                alt={img[currentIndex].title}
-                className="object-cover object-center w-full h-auto"
-                priority
-              />
-            </div>
-          </motion.div>
-        </AnimatePresence>
-      </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div >
       <div className='z-20 absolute inset-0 flex items-center pt-8 bg-black/50'>
         <div className='w-full md:pl-32 p-2 md:w-3/4'>
           <div className='w-full max-sm:pl-8 p-7 md:p-10 overflow-hidden bg-white/10 min-h-50 md:min-h-56 backdrop-blur-xl rounded-2xl'>

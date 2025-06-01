@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { uuidv7 } from "uuidv7";
 import Image from "next/image";
+import placeholders from "@/lib/placeholders";
 
 const images = [
   { title: "Idea", img: "/images/home/process-steps/img-1.jpg" },
@@ -56,6 +57,8 @@ export default function TimelineScrollImages() {
               height={641}
               src={item.img}
               alt={item.title}
+              placeholder='blur'
+              blurDataURL={placeholders[item.img]}
               className="absolute top-0 left-0 object-cover w-full h-full"
             />
           </div>

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { uuidv7 } from "uuidv7";
+import placeholders from '@/lib/placeholders';
 
 
 const testimonials = [
@@ -74,6 +75,8 @@ const ClientMsg = () => {
                 height={70}
                 width={70}
                 alt={testimonials[currentIndex].name}
+                placeholder='blur'
+                blurDataURL={placeholders[testimonials[currentIndex].img]}
                 className="w-full h-auto object-cover rounded-full ring-2 ring-black"
               />
             </div>

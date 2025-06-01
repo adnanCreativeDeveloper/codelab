@@ -1,4 +1,5 @@
 'use client';
+import placeholders from '@/lib/placeholders';
 import { faSlack, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -1,4 +1,5 @@
 import HeadingAnimation from '@/components/common/heading-animation';
+import placeholders from '@/lib/placeholders';
 import Image from 'next/image';
 import React from 'react';
 
@@ -15,7 +16,7 @@ const CompanyIntro = () => {
         <div className="rounded-2xl overflow-hidden -top-[70px] left-0 absolute w-full h-full">
 
           <div className='relative w-full h-full'>
-            <Image fill src='/images/about/codelab-team.jpg' alt='About Us' className='object-cover object-center w-full h-full' />
+            <Image fill placeholder='blur' blurDataURL={placeholders['/images/about/codelab-team.jpg']} src='/images/about/codelab-team.jpg' alt='About Us' className='object-cover object-center w-full h-full' />
             <div className='absolute inset-0 bg-black/50 flex items-end pb-20'>
               <div>
                 <div className='py-12 pl-7 px-5 rounded-e-2xl bg-white w-full md:w-1/2'>

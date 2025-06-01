@@ -1,3 +1,4 @@
+import placeholders from '@/lib/placeholders';
 import Image from 'next/image';
 
 const AboutCompanyBanner = () => {
@@ -11,6 +12,8 @@ const AboutCompanyBanner = () => {
           src="/images/how-we-help/seo.png"
           alt="Team working at CodeLab"
           className="w-full h-full object-cover bg-left rounded-none md:rounded-l-2xl"
+          placeholder='blur'
+          blurDataURL={placeholders['/images/how-we-help/seo.png']}
         />
       </div>
 
