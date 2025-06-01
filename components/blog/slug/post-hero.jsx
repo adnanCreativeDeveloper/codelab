@@ -1,7 +1,6 @@
 import placeholders from '@/lib/placeholders';
 import Image from 'next/image';
 import React from 'react';
-import { uuidv7 } from 'uuidv7';
 const PostHero = ({ data }) => {
   if (!data) {
     return <div className='container mx-auto text-center py-10'>Loading...</div>;

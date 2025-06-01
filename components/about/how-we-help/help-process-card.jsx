@@ -8,46 +8,55 @@ const how_we_help = [
     title: <h1 className="text-[26px] font-semibold text-[#2a2d34] py-6">CRM <span className="text-[#af1919]">Development</span></h1>,
     description: 'We build powerful and user-friendly CRM systems to help businesses manage customer relationships, track leads, and streamline operations. Our solutions are designed to improve efficiency, boost sales, and enhance customer interactions.',
     icon: '/images/how-we-help/development.png',
+    id: uuidv7()
   },
   {
     title: '',
     description: '',
     icon: '/images/how-we-help/development-.jpg',
+    id: uuidv7()
   },
   {
     title: '',
     description: '',
     icon: '',
+    id: uuidv7()
   },
   {
     title: '',
     description: '',
     icon: '',
+    id: uuidv7()
   },
   {
     title: <h1 className="text-[26px] font-semibold text-[#2a2d34] py-6">Data <span className='text-[var(--accent)]'>Management</span> and Analytics</h1>,
     description: 'We help businesses organize, process, and analyze data to make smarter decisions. Our solutions ensure data security, accuracy, and valuable insights that drive growth and efficiency.',
     icon: '/images/how-we-help/analytics.png',
+    id: uuidv7()
   },
   {
     title: <h1 className="text-[26px] font-semibold text-[#2a2d34] py-6">Integration <span className='text-[var(--accent)]'>Solutions</span></h1>,
     description: 'We connect your software, apps, and systems for seamless performance. Our integration solutions ensure smooth data flow, improved efficiency, and a better user experience across all platforms..',
     icon: '/images/how-we-help/integration.png',
+    id: uuidv7()
   },
   {
     title: <h1 className="text-[26px] font-semibold text-[#2a2d34] py-6">IT <span className='text-[var(--accent)]'>Support</span> & Maintenance</h1>,
     description: 'We provide reliable IT support and ongoing maintenance to keep your systems running smoothly. From troubleshooting issues to regular updates and security checks, we ensure optimal performance and minimal downtime.',
     icon: '/images/how-we-help/support.png',
+    id: uuidv7()
   },
   {
     title: <h1 className="text-[26px] font-semibold text-[#2a2d34] py-6">Business Process <span className='text-[var(--accent)]'>Automation</span></h1>,
     description: 'We streamline workflows by automating repetitive tasks, improving efficiency, and reducing errors. Our solutions help businesses save time, cut costs, and focus on growth.',
     icon: '/images/how-we-help/automation.png',
+    id: uuidv7()
   },
   {
     title: '',
     description: '',
     icon: '',
+    id: uuidv7()
   },
 ]
 
@@ -55,7 +64,7 @@ const HelpProcessCard = () => {
   return (
     <>
       {how_we_help.map((item, i) => (
-        <Animation key={uuidv7()}>
+        <Animation key={item.id}>
           <div
             className={`${item.title ? 'bg-[#f5f2f2] hover:shadow-md pt-8 px-6 pb-4' : 'bg-white pt-0 px-0 pb-0'} ${!item.title && 'hidden md:block'} text-black rounded-lg 
                 hover:rounded-lg hover:bg-white 

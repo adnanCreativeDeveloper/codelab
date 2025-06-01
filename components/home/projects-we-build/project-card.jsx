@@ -9,12 +9,12 @@ import { uuidv7 } from 'uuidv7';
 import placeholders from '@/lib/placeholders';
 
 const projects = [
-    { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-1.jpg' },
-    { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-2.jpg' },
-    { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-3.jpg' },
-    { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-4.jpg' },
-    { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-5.jpg' },
-    { title: 'MC SALON', date: '29/04/2025', img: '/images/home/project/project-6.jpg' },
+    { title: 'MC SALON', id: uuidv7(), date: '29/04/2025', img: '/images/home/project/project-1.jpg' },
+    { title: 'MC SALON', id: uuidv7(), date: '29/04/2025', img: '/images/home/project/project-2.jpg' },
+    { title: 'MC SALON', id: uuidv7(), date: '29/04/2025', img: '/images/home/project/project-3.jpg' },
+    { title: 'MC SALON', id: uuidv7(), date: '29/04/2025', img: '/images/home/project/project-4.jpg' },
+    { title: 'MC SALON', id: uuidv7(), date: '29/04/2025', img: '/images/home/project/project-5.jpg' },
+    { title: 'MC SALON', id: uuidv7(), date: '29/04/2025', img: '/images/home/project/project-6.jpg' },
 ]
 
 export default function ProjectCard() {
@@ -42,7 +42,7 @@ export default function ProjectCard() {
             slidesPerView={slidesPerView} className="mySwiper">
             {projects.map((item) => (
                 <SwiperSlide
-                    key={uuidv7()} className='cursor-grab active:cursor-grabbing flex-shrink-0'>
+                    key={item.id} className='cursor-grab active:cursor-grabbing flex-shrink-0'>
                     <div className="bg-gray-100 rounded-3xl p-4">
                         <div className="flex items-center justify-between mb-4 text-sm md:text-xs lg:text-base">
                             <div className="py-1 px-3 rounded-full bg-gray-200">

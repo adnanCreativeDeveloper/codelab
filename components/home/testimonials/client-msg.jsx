@@ -64,7 +64,7 @@ const ClientMsg = () => {
           initial={{ opacity: 0, y: 0, scale: 0.8 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 100, scale: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
           className="relative rounded-4xl px-4 md:px-14 py-10 md:py-20 bg-gray-100 text-gray-600 shadow-2xl"
         >
           <p className="mb-10">{testimonials[currentIndex].description}</p>

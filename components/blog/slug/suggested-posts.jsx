@@ -15,7 +15,7 @@ const SuggestedPosts = () => {
   const numberOfPosts = getRandomNumber();
   return (
     <>
-      {blog_arr.slice(1, numberOfPosts).map((item, i) => i % 2 === 0 && <div key={uuidv7()} className='max-sm:h-36 grid grid-cols-12 gap-5 p-3 mb-4 bg-gray-200 border border-gray-300 rounded-lg cursor-pointer last:mb-0 hover:shadow-lg'>
+      {blog_arr.slice(1, numberOfPosts).map((item, i) => i % 2 === 0 && <div key={item.id} className='max-sm:h-36 grid grid-cols-12 gap-5 p-3 mb-4 bg-gray-200 border border-gray-300 rounded-lg cursor-pointer last:mb-0 hover:shadow-lg'>
         <div className="relative w-full h-full overflow-hidden rounded-lg sm:w-32 sm:h-32 col-span-4 md:rounded-xl">
           <Image
             height={130}

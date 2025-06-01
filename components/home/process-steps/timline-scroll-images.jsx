@@ -6,12 +6,12 @@ import Image from "next/image";
 import placeholders from "@/lib/placeholders";
 
 const images = [
-  { title: "Idea", img: "/images/home/process-steps/img-1.jpg" },
-  { title: "Design", img: "/images/home/process-steps/img-2.jpg" },
-  { title: "Develop", img: "/images/home/process-steps/img-3.jpg" },
-  { title: "Test", img: "/images/home/process-steps/img-4.webp" },
-  { title: "Launch", img: "/images/home/process-steps/img-5.jpg" },
-  { title: "Support", img: "/images/home/process-steps/img-6.webp" },
+  { title: "Idea", id: uuidv7(), img: "/images/home/process-steps/img-1.jpg" },
+  { title: "Design", id: uuidv7(), img: "/images/home/process-steps/img-2.jpg" },
+  { title: "Develop", id: uuidv7(), img: "/images/home/process-steps/img-3.jpg" },
+  { title: "Test", id: uuidv7(), img: "/images/home/process-steps/img-4.webp" },
+  { title: "Launch", id: uuidv7(), img: "/images/home/process-steps/img-5.jpg" },
+  { title: "Support", id: uuidv7(), img: "/images/home/process-steps/img-6.webp" },
 ];
 
 export default function TimelineScrollImages() {
@@ -45,7 +45,7 @@ export default function TimelineScrollImages() {
       >
         {images.map((item, i) => (
           <div
-            key={uuidv7()}
+            key={item.id}
             className="absolute top-0 left-0 w-full h-full"
             style={{ transform: `translateY(${i * 100}%)` }}
           >

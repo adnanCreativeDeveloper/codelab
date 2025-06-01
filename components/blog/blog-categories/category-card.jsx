@@ -1,22 +1,18 @@
-'use client'
 import placeholders from '@/lib/placeholders';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { uuidv7 } from 'uuidv7';
+import CategoryCardAnimation from './category-card-animation';
 
 const CategoryCard = ({ blog_arr, type }) => {
   const filteredPosts = (type === 'All' || !type) ? blog_arr : blog_arr.filter((item) => item.category === type);
   return (
     <AnimatePresence mode="sync">
       {filteredPosts.map((item) => (
-        <motion.div
-          key={item.slug}
-          layout
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.8 }}
-          transition={{ duration: 0.3 }}>
+        <CategoryCardAnimation
+          key={item.id}>
           <div>
             {/* <Link href={`/blog/${item.slug}`}> */}
             <div className='relative w-full overflow-hidden rounded-md min-h-80 shadow-xl'>
@@ -44,7 +40,7 @@ const CategoryCard = ({ blog_arr, type }) => {
             </div>
             {/* </Link > */}
           </div>
-        </motion.div>
+        </CategoryCardAnimation>
       ))}
     </AnimatePresence >
   );

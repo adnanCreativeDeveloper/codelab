@@ -12,30 +12,35 @@ import placeholders from "@/lib/placeholders";
 const team = [
   {
     name: 'Ariba Dastgir',
+    id: uuidv7(),
     role: 'App Developer',
     location: 'Bahawalpur',
     img: '/images/home/our-team/areeba.png',
   },
   {
     name: 'Fiza Yaseen',
+    id: uuidv7(),
     role: 'Hr.For Codelab',
     location: 'Bahawalpur',
     img: '/images/home/our-team/Fizza.png',
   },
   {
     name: 'Shumaila Sial',
+    id: uuidv7(),
     role: 'Graphic Designer T/C',
     location: 'Massachusetts',
     img: '/images/home/our-team/Shumaila.png',
   },
   {
     name: 'Malik Ansar',
+    id: uuidv7(),
     role: 'WordPress Developer',
     location: 'Liaquatpur',
     img: '/images/home/our-team/Frame-1618873284-1.png',
   },
   {
     name: 'Ahtasham Athar',
+    id: uuidv7(),
     role: 'Front-End Developer',
     location: 'Bahawalpur',
     img: '/images/home/our-team/ahtsham.png',
@@ -66,12 +71,12 @@ const OurTeam = () => {
 
       {[0, 1, 2].map((row) => (
         <div
-          key={uuidv7()}
+          key={uuidv7() + row}
           className={`marquee-container ${row % 2 === 0 ? 'marquee-right' : 'marquee-left'}`}
         >
           <div className="marquee-content">
-            {[...team, ...team].map((item) => (
-              <TeamMotion key={uuidv7()}>
+            {[...team, ...team].map((item, i) => (
+              <TeamMotion key={item.id + i}>
                 <div className="flex items-start gap-4 p-2 m-2 duration-150 bg-white shadow-lg rounded-2xl min-w-72 hover:scale-110">
                   <Image
                     height={70}

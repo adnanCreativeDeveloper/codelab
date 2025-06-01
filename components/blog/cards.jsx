@@ -11,7 +11,7 @@ const Cards = () => {
   return (
     blog_arr.map((item) => (
       <SwiperSlide
-        key={uuidv7()}
+        key={item.id}
         className="flex-shrink-0 p-3 bg-gray-200 border border-gray-300 rounded-lg cursor-pointer w-80 hover:shadow-lg"
       >
         <div className="relative w-full overflow-hidden rounded-2xl">

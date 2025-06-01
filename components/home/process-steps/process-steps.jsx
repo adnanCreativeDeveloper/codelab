@@ -7,12 +7,12 @@ import TimelineScrollImages from "./timline-scroll-images";
 import HeadingAnimation from "@/components/common/heading-animation";
 
 const process_steps = [
-  { title: "Idea", description: "We analyze your vision thoroughly to ensure the roadmap is perfectly aligned with your end goals, setting the stage for product success.", },
-  { title: "Design", description: "Creating a minimal viable product (MVP) that balances design with core functionality, maximizing value and user satisfaction.", },
-  { title: "Develop", description: "Building your solution with modern technology and efficient coding practices to ensure scalability and performance.", },
-  { title: "Test", description: "Comprehensive quality assurance to identify and resolve issues before launch, ensuring a smooth user experience.", },
-  { title: "Launch", description: "Strategic deployment of your product to market with careful monitoring and support during the critical initial release.", },
-  { title: "Support", description: "Ongoing maintenance and updates to keep your product running smoothly and evolving with your business needs.", }
+  { title: "Idea", id: uuidv7(), description: "We analyze your vision thoroughly to ensure the roadmap is perfectly aligned with your end goals, setting the stage for product success.", },
+  { title: "Design", id: uuidv7(), description: "Creating a minimal viable product (MVP) that balances design with core functionality, maximizing value and user satisfaction.", },
+  { title: "Develop", id: uuidv7(), description: "Building your solution with modern technology and efficient coding practices to ensure scalability and performance.", },
+  { title: "Test", id: uuidv7(), description: "Comprehensive quality assurance to identify and resolve issues before launch, ensuring a smooth user experience.", },
+  { title: "Launch", id: uuidv7(), description: "Strategic deployment of your product to market with careful monitoring and support during the critical initial release.", },
+  { title: "Support", id: uuidv7(), description: "Ongoing maintenance and updates to keep your product running smoothly and evolving with your business needs.", }
 ]
 
 
@@ -49,7 +49,7 @@ const ProcessSteps = () => {
             <div>
               {process_steps.map((item) => (
                 <div
-                  key={uuidv7()}
+                  key={item.id}
                   className={`pt-13 sm:pt-20 md:pt-40 first:pt-0`}
                 >
                   <h1 className='font-bold text-2xl sm:text-3xl md:text-5xl text-[var(--accent)]'>{item.title}</h1>

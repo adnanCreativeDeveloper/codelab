@@ -8,12 +8,14 @@ import { uuidv7 } from 'uuidv7';
 
 const services = [
   {
+    id: uuidv7(),
     img: '/images/services/service/figma.jpg',
     alt: 'figma',
     description: '',
     style: 'sm:col-span-6 md:col-span-4 col-span-12 lg:col-span-3 rounded-lg ring-2 ring-black hover:opacity-25',
   },
   {
+    id: uuidv7(),
     img: '/images/services/service/ui-ux.jpeg',
     alt: 'ui-ux',
     description: '',
@@ -26,24 +28,28 @@ const services = [
     style: 'sm:col-span-6 md:col-span-8 lg:col-span-6 p-2 rounded-lg md:p-5 bg-[#f5f2f2] col-span-12 md:col-span-6',
   },
   {
+    id: uuidv7(),
     img: '/images/services/service/analytics.jpeg',
     alt: 'analytics',
     description: '',
     style: 'sm:col-span-6 md:col-span-4 col-span-12 lg:col-span-3 rounded-lg ring-2 ring-black hover:opacity-25',
   },
   {
+    id: uuidv7(),
     img: '/images/services/service/digital-marketing.jpeg',
     alt: 'digital-marketing',
     description: '',
     style: 'sm:col-span-6 md:col-span-4 col-span-12 lg:col-span-3',
   },
   {
+    id: uuidv7(),
     img: '/images/services/service/app-development.jpeg',
     alt: 'app-development',
     description: '',
     style: 'sm:col-span-6 md:col-span-4 col-span-12 lg:col-span-3',
   },
   {
+    id: uuidv7(),
     img: '/images/services/service/flutter.png',
     alt: 'flutter',
     description: '',
@@ -56,36 +62,42 @@ const services = [
     style: 'sm:col-span-6 md:col-span-8 lg:col-span-6 p-2 rounded-lg md:p-5 bg-[#f5f2f2] col-span-12 md:col-span-6',
   },
   {
+    id: uuidv7(),
     img: '/images/services/service/seo.png',
     alt: 'seo',
     description: '',
     style: 'sm:col-span-6 md:col-span-4 col-span-12 lg:col-span-3 rounded-lg ring-2 ring-black hover:opacity-25',
   },
   {
+    id: uuidv7(),
     img: '/images/services/service/search-engin-seo.jpg',
     alt: 'search-engin-seo',
     description: '',
     style: 'sm:col-span-6 md:col-span-4 col-span-12 lg:col-span-3',
   },
   {
+    id: uuidv7(),
     img: '/images/services/service/ai-content-writting.jpg',
     alt: 'content-writing',
     description: '',
     style: 'sm:col-span-6 md:col-span-4 col-span-12 lg:col-span-3',
   },
   {
+    id: uuidv7(),
     img: '/images/services/service/remote-work.jpg',
     alt: 'remote-tagline',
     description: '',
     style: 'sm:col-span-6 md:col-span-4 col-span-12 lg:col-span-3 rounded-lg ring-2 ring-black hover:opacity-25',
   },
   {
+    id: uuidv7(),
     img: '/images/services/service/content-writing.jpg',
     alt: 'content-writing',
     description: '',
     style: 'sm:col-span-6 md:col-span-4 col-span-12 lg:col-span-3 rounded-lg',
   },
   {
+    id: uuidv7(),
     img: '/images/services/service/remote-tagline.jpg',
     alt: 'remote-tagline',
     description: '',
@@ -98,7 +110,7 @@ const Service = () => {
     <section className='container p-2 mx-auto my-10 md:mt-28'>
       <div className='grid grid-cols-12 gap-7'>
         {services.map((item) => (
-          <div className={`relative duration-300 ${item.style}`}>
+          <div key={item.id} className={`relative duration-300 ${item.style}`}>
             <Animation>
               {item.description && <FontAwesomeIcon icon={faQuoteRight} className='text-5xl text-gray-900' />}
               {item.description ? <p className="pt-4 text-sm text-gray-800 md:text-xl">{item.description}</p> : <Image height={320} width={320} src={item.img} alt={item.alt} className='object-cover w-full rounded-lg h-80' />}

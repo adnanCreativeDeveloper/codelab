@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faEye } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import placeholders from '@/lib/placeholders';
+import Animation from '../common/animation';
+import { uuidv7 } from 'uuidv7';
 
 const LatestPost = ({ blog_arr }) => {
   const [visiblePosts, setVisiblePosts] = useState([]);
@@ -38,7 +40,7 @@ const LatestPost = ({ blog_arr }) => {
       </HeadingAnimation>
 
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-        {visiblePosts.slice(0, 2).map((item) => (<div key={item.slug} className='relative w-full overflow-hidden rounded-md h-80 shadow-xl'>
+        {visiblePosts.slice(0, 2).map((item) => (<Animation key={item.id}> <div className='relative w-full overflow-hidden rounded-md h-80 shadow-xl'>
           <div className="absolute top-0 left-0 w-full rounded-lg -z-10 h-80">
             <Image
               width={604}
@@ -71,7 +73,9 @@ const LatestPost = ({ blog_arr }) => {
               </div>
             </div>
           </div>
-        </div>))}
+        </div>
+        </Animation>
+        ))}
       </div>
     </div>
   );

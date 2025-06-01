@@ -1,5 +1,6 @@
 import fs, { readdirSync } from 'fs'
 import matter from 'gray-matter'
+import { uuidv7 } from 'uuidv7'
 
 const GetPostMetaData = (basePath) => {
   const folder = basePath + '/'
@@ -11,6 +12,7 @@ const GetPostMetaData = (basePath) => {
     const fileContent = fs.readFileSync(filePath, 'utf-8')
     const { data } = matter(fileContent)
     return {
+      id: uuidv7(),
       title: data.title,
       key_words: data.key_words,
       description: data.description,

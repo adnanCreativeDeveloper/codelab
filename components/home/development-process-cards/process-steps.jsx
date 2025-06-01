@@ -7,6 +7,7 @@ import { uuidv7 } from "uuidv7";
 const process_steps = [
   {
     title: "Project Planning & Requirements",
+    id: uuidv7(),
     description:
       "Beyond initial scope, our adaptive project planning incorporates rolling wave forecasting and value stream mapping to ensure continuous alignment with market shifts and business outcomes.",
     img: "/images/home/development-process/point-1.png",
@@ -21,6 +22,7 @@ const process_steps = [
   },
   {
     title: "Sprint Execution Process",
+    id: uuidv7(),
     description:
       "Our sprint execution leverages AI-powered backlog refinement and real-time dependency mapping, optimizing resource utilization and minimizing cross-team integration friction.",
     img: "/images/home/development-process/point-2.png",
@@ -35,6 +37,7 @@ const process_steps = [
   },
   {
     title: "Daily Team Stand‑ups",
+    id: uuidv7(),
     description:
       "Our dynamic stand-ups integrate sentiment analysis and proactive risk identification, transforming quick updates into actionable insights for immediate team optimization and morale boosting.",
     img: "/images/home/development-process/point-3.png",
@@ -49,6 +52,7 @@ const process_steps = [
   },
   {
     title: "Review & Continuous Feedback",
+    id: uuidv7(),
     description:
       "Our feedback loop extends beyond traditional reviews, incorporating user behavior analytics and predictive quality assessments to inform iterative enhancements and future-proofing.",
     img: "/images/home/development-process/point-4.png",
@@ -67,7 +71,7 @@ const ProcessSteps = () => {
     <motion.div initial={{ scale: 0.7 }} whileInView={{ scale: 1 }} transition={{ duration: 0.2 }} viewport={{ once: true }}>
       {process_steps.map((item, index) => (
         <motion.div
-          key={uuidv7()}
+          key={item.id}
           className={`
             ${item.styles.cardBg} ${item.styles.top} drop-shadow-2xl py-4 sm:py-16 md:py-20 px-4 sm:px-8 md:px-14
             grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 rounded-4xl mb-16 last:mb-0 sticky
