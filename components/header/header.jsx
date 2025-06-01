@@ -8,7 +8,6 @@ const slugs = [
 
 
 const Header = () => {
-  console.log(slugs)
   return (
     <Nav slugs={slugs} />
   );
