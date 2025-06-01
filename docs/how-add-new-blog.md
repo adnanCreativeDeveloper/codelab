@@ -14,7 +14,7 @@ The blog system expects each post to follow a specific structure, folder placeme
 
 📁 **Location:**  
 Place the file in the following folder at the root of the project:
-/blog-post-files/
+`/blog-post-files/`
 
 
 
@@ -29,18 +29,16 @@ For a blog post with the slug `my-awesome-article`, the file path should be:
 
 - If your blog post includes a main/featured image:
   - Save the image in the following directory:
-    ```
-    /public/images/blog/blog-md/
-    ```
+    ``` /public/images/blog/blog-md/ ```
   - Reference this image in the `img` field in the frontmatter.
 
 🖼️ **Example image path:**
-/images/blog/blog-md/my-awesome-article.jpg
+``` /images/blog/blog-md/my-awesome-article.jpg ```
 
 ### **🧪 Demo Structure**
 Here’s a sample blog post with real content and frontmatter, demonstrating the complete structure:
 
-```yaml
+```
 ---
 title: What is API Shift Select vs. API Definition? A Strategic Approach
 description: Explore the strategic differences between API Shift Select and API Definition. This article explains how APIs simplify and accelerate application development, enhance security, and discusses various API types, from open to composite APIs, in modern business applications.
@@ -66,5 +64,7 @@ This is a sample blog post demonstrating how to format a post and place assets.
 
 The featured image used here is stored in:
 /public/images/blog/blog-md/api-1.jpg
+
+![api-1](/images/blog/blog-md/api-1.jpg)
 
 Continue writing your blog content below the frontmatter. Use Markdown syntax for headings, images, links, lists, and formatting as needed.
