@@ -27,7 +27,7 @@ const PostHero = ({ data }) => {
             alt={data.title}
             fill
             placeholder='blur'
-            blurDataURL={placeholders[item.img]}
+            blurDataURL={placeholders[data.img]}
             className="object-cover w-full h-full"
           />
         </div>

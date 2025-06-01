@@ -33,6 +33,7 @@ const BlogCard = ({ blog_arr }) => {
           nextEl: '.blog-next',
           prevEl: '.blog-prev',
         }}
+        loop={true}
         modules={[Navigation]}
         spaceBetween={20}
         slidesPerView={slidesPerView}>

@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -14,7 +14,15 @@ const BlogHomePageSlider = ({ img }) => {
   return (
     <div className='relative w-full h-full'>
       <div className="w-full h-full bg-amber-500 overflow-hidden">
-        <Swiper modules={[Autoplay]} loop={true} autoplay={{ delay: 5000, disableOnInteraction: false }} spaceBetween={0} slidesPerView={1} speed={500} onSlideChange={(swiper) => setCurrentIndex(swiper.activeIndex)}>
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          loop={true}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          spaceBetween={0}
+          slidesPerView={1}
+          speed={500}
+          onSlideChange={(swiper) => setCurrentIndex(swiper.realIndex)}
+        >
           {img.map((item, idx) => (
             <SwiperSlide key={idx}>
               <div className="relative h-[100vh] w-full">
@@ -29,6 +37,7 @@ const BlogHomePageSlider = ({ img }) => {
           <div className='w-full max-sm:pl-8 p-7 md:p-10 overflow-hidden bg-white/10 min-h-50 md:min-h-56 backdrop-blur-xl rounded-2xl'>
             <AnimatePresence mode="wait">
               <motion.div key={currentIndex}
+                layout
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -100, opacity: 0 }}
