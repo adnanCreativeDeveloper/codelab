@@ -28,15 +28,16 @@ function capitalize(text) {
 }
 
 export async function generateMetadata({ params }) {
+  const slug = await params;
   return {
-    title: `Codelab | ${capitalize(params.slug.replace(/-/g, " "))}`,
-    description: `Read more about ${params.slug} on the Codelab blog.`,
+    title: `Codelab | ${capitalize(slug.slug.replace(/-/g, " "))}`,
+    description: `Read more about ${slug.slug} on the Codelab blog.`,
   };
 }
 
 export default async function BlogPostPage(props) {
-  const slug = await props.params.slug;
-  const postData = GetPostContent(slug);
+  const slug = await props.params;
+  const postData = GetPostContent(slug.slug);
   if (!postData) return notFound();
 
   const { data, content } = postData;
