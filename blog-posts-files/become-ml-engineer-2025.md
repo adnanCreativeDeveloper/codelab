@@ -138,7 +138,7 @@ Models undergo validation testing using s, ate d, measuring accuracy, performanc
 
 1.  **Deployment**
 
-The completed model becomes available through applications and [APIs](https://codelab.pk/what-is-api-shift-select-vs-api-definition-a-strategic-approach/) as well as cloud services for practical deployment purposes. Engineers work to guarantee high levels of scalability together with operational efficiency during model deployment.
+The completed model becomes available through applications and [APIs](/blog/api-shift-select-definition) as well as cloud services for practical deployment purposes. Engineers work to guarantee high levels of scalability together with operational efficiency during model deployment.
 
 1.  **Continuous Monitoring and Improvement**
 
