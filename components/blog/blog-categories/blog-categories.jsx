@@ -78,10 +78,10 @@ const BlogCategories = ({ blog_arr }) => {
       </HeadingAnimation>
       <div className="relative">
         {(isShadow === 'left' || isShadow === 'both') && (
-          <div className='absolute top-0 left-0 z-10 w-10 h-full bg-gradient-to-l md:hidden from-transparent via-white to-white'></div>
+          <div className='absolute top-0 left-0 z-10 w-10 h-full bg-gradient-to-l md:hidden from-transparent via-white/70 to-white'></div>
         )}
         {(isShadow === 'right' || isShadow === 'both') && (
-          <div className='absolute top-0 right-0 z-10 w-10 h-full bg-gradient-to-r md:hidden from-transparent via-white to-white'></div>
+          <div className='absolute top-0 right-0 z-10 w-10 h-full bg-gradient-to-r md:hidden from-transparent via-white/70 to-white'></div>
         )}
         <Animation>
           <div className=' flex items-center gap-10 px-10 overflow-x-auto' ref={scrollRef}>
