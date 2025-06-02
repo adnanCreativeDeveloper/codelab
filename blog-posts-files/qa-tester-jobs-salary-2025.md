@@ -1,7 +1,7 @@
 ---
 title: QA Tester Vacancy 2025 – Jobs, Salary & Skills Guide
 description: Find out everything you need to know about QA Tester vacancies in 2025, including job roles, average salaries, and essential skills. This guide covers different types of QA testing and recommended degrees to build a successful career in quality assurance.
-img: /images/blog/blogs/bug-detection.png
+img: /images/blog/blogs/bug-detection.jpg
 category: Development
 key_words: [
       "QA Tester",

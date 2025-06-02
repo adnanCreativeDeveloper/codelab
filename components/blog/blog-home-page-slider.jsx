@@ -26,7 +26,7 @@ const BlogHomePageSlider = ({ img }) => {
           {img.map((item, idx) => (
             <SwiperSlide key={item.id}>
               <div className="relative h-[100vh] w-full">
-                <Image src={item.img} alt={item.title} layout="fill" placeholder="blur" blurDataURL={placeholders[item.img]} className="object-cover h-full w-full" />
+                <Image src={item.img} alt={item.title} fill placeholder="blur" blurDataURL={placeholders[item.img]} className="object-cover h-full w-full" />
               </div>
             </SwiperSlide>
           ))}
