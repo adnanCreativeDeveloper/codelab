@@ -1,4 +1,5 @@
 import HeadingAnimation from "@/components/common/heading-animation";
+import TypingAnimation from "./typing-animation";
 
 const HeroHeadline = () => {
   return (
@@ -10,7 +11,18 @@ const HeroHeadline = () => {
           </h1>
           <p className="flex items-center text-sm sm:text-lg md:text-xl whitespace-nowrap ">
             <span className="font-bold text-[#ffffff]">We Create Powerful &nbsp;</span>
-            <span id="dynamicText" className="text-white">Web Solutions</span>
+            <span id="dynamicText" className="text-white">
+              <TypingAnimation
+                texts={[
+                  'Technology solutions',
+                  'Software solutions',
+                  'Web Solutions',
+                  'IT Solutions',
+                  'Digital Solutions',
+                ]}
+                speed={100}
+              />
+            </span>
           </p>
         </div>
       </HeadingAnimation>
